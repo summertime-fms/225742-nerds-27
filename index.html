@@ -35,8 +35,8 @@
 				Любим математику,
 			    как никто другой
 			</p>
-			<pre>Никакого креатива, только математические формулы
-			   для расчета идеальных пропорций</pre>
+			<p>Никакого креатива, только математические формулы
+			   для расчета идеальных пропорций</p>
 			
 			<img src="img/slide2.png" width="698" height="413">
 			<a href="">Узнать больше</a>
@@ -136,8 +136,22 @@
     </footer>
 	<section>
 		<h2>Напишите нам</h2>
-		<!-- Тут будет форма -->
-		<button type="button">Отправить</button>
+		<form method="post" action="">
+			<label for="name=field">
+				Ваше имя:
+			</label> <br>
+			<input type="text" name="name" id="name=field" value="Имя Фамилия"><br>
+			<label for="email-field">Ваш e-mail:</label> <br>
+			<input type="text" name="email" id="email-field" value="email@example.com"> <br>
+			<label for="letter-field">Текст письма:</label> <br>
+			<textarea id="letter-field">В свободной форме</textarea> <br>
+
+
+
+		
+		
+		<input type="submit" value="Отправить">
+		</form>
 	</section>
   </body>
 </html>
