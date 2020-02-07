@@ -28,45 +28,53 @@
 			<h2 class="visually-hidden">Фильтр проектов</h2>
 			<form method="post" action="">
 			<p> Стоимость:</p>
-			<span></span>  <!--  ползунок стоимости -->
-				<p>Сетка:</p>  <!--Или лучше заголовок? -->
+			<span></span>
+			<fieldset>  <!--  ползунок стоимости -->
+				<legend>Сетка:</legend>
+				<ul>
+					<li>  
 				<label>
 					<input type="radio" name="grid-type" value="adapted" checked> Адаптивная
 				</label>
-				<br>
+				</li>
+				<li>
 				<label>
 					<input type="radio" name="grid-type" value="fixed">Фиксированная
 				</label>
-				<br>
+				</li>
+				<li>
 				<label>
 					<input type="radio" name="grid-type" value="flex">Резиновая
 				</label>
-				<p>Особенности:</p>
-				<input type="checkbox" name="slider" id="slider-checkbox" checked>
-				<label for="slider-checkbox" checked>
-					Слайдер
-				</label>
-				 <br>
-				<input type="checkbox" name="advantages-block" id="advantages-checkbox">
-				<label for="advantages-checkbox">
-					Блок преимуществ
-				</label>
-				 <br>
-				<input type="checkbox" name="news" id="news-checkbox" checked>
-				<label for="news-checkbox">
-					Новости
-				</label>
-				 <br>
-				<input type="checkbox" name="gallery" id="galery-checkbox">
-				<label for="gallery-checkbox">
-					Галерея
-				</label>
-				<br>
-				<input type="checkbox" name="basket" id="basket-checkbox">
-				<label for="basket-checkbox">
-					Корзина
-				</label> <br>
+				</li>
+				</ul>
+				</fieldset>
+				<fieldset>
+				<legend>Особенности:</legend>
+				<ul>
+					<li>
+						<label for="slider-checkbox">Слайдер</label>
+				<input type="checkbox" name="slider" id="slider-checkbox" checked> 
+			</li>
+			<li>
+				   <label for="advantages-checkbox">Блок преимуществ</label>
+				   <input type="checkbox" name="advantages-block" id="advantages-checkbox">
+				</li>
+				<li>
+					<label for="news-checkbox">Новости</label>
+				    <input type="checkbox" name="news" id="news-checkbox" checked>
+				</li>
+				<li>
+					<label for="gallery-checkbox">Галерея</label>
+			     	<input type="checkbox" name="gallery" id="galery-checkbox">
+				</li>
+				<li>
+					<label for="basket-checkbox">Корзина</label> 
+					<input type="checkbox" name="basket" id="basket-checkbox">
+					</li>
+				</ul>
 				<button type="submit">Показать</button>
+				</fieldset>
 
 			</form>
     		
@@ -133,10 +141,12 @@
     	</section>
     </main>
     <footer>  
-		<ul> 
-			<li><a href="" aria-label="Вконтакте"></a></li>
-			<li><a href="" aria-label="Фейсбук"></a></li>
-			<li><a href="" aria-label="Инстаграм"></a></li>
+		 
+			<ul> 
+				<li><a href="" ><span class="visually-hidden">Вконтакте</span></a></li>
+				<li><a href=""><span class="visually-hidden">Фейсбук</span></a></li>
+				<li><a href=""><span class="visually-hidden">Инстаграм</span></a></li>
+			
 		</ul>
       		
       	<p>Давайте дружить, это выгодно!<br> 
@@ -151,11 +161,11 @@
 			<label for="name=field">
 				Ваше имя:
 			</label> <br>
-			<input type="text" name="name" id="name=field" placeholder="Имя Фамилия"><br>
-			<label for="email-field">Ваш e-mail:</label> <br>
-			<input type="text" name="email" id="email-field" placeholder="email@example.com"> <br>
-			<label for="letter-field">Текст письма:</label> <br>
-			<textarea id="letter-field">В свободной форме</textarea> <br>
+			<input type="text" name="name" id="name=field" placeholder="Имя Фамилия">
+			<label for="email-field">Ваш e-mail:</label> 
+			<input type="email" name="email" id="email-field" placeholder="email@example.com"> 
+			<label for="letter-field">Текст письма:</label> 
+			<textarea id="letter-field" placeholder="В свободной форме"></textarea> 
 		<button type="submit">Отправить </button> <!--  Или лучше input? В академии говорят по разному-->-->
 		</form>
 	</section>
