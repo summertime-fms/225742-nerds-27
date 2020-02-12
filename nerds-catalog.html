@@ -84,9 +84,15 @@
     			<li><button type="button">По цене</button></li> 
     			<li><button type="button">По типу</button></li> 
     			<li><button type="button">По названию</button></li>
-    		</ul>
-    		<button type="button"></button>
-    		<button type="button"></button> <!--Показ с конца либо сначала -->
+			</ul>
+			<ul>
+				<li>
+			<button type="button"></button>
+			</li>
+			<li>
+			<button type="button"></button> <!--Показ с конца либо сначала -->
+			</li>
+			</ul>
     		
     	</section>
     	<section> 
@@ -136,7 +142,7 @@
     		ул. Б.Конюшенная, д. 19/8 <br>
     		тел. <a href="tel:+78122757575"> +7(812)275-75-75</a>
 			</address>
-			<a href="">Напишите нам</a>
+			<a href="">Напишите нам</a> <!--Здесь точно ссылка? отдельную страницу же не открывает,а просто снимает класс visually-hidden у блока Напишите нам-->
 			</div>
     	</section>
     </main>
@@ -149,24 +155,24 @@
 			
 		</ul>
       		
-      	<p>Давайте дружить, это выгодно!<br> 
+      	<p>Давайте дружить, это выгодно!
           <span>Скидка 10% для друзей из социальных сетей.</span>
       	</p>
 
 	</footer>
-	<section>
+	<section class="visually-hidden">
 		<h2>Напишите нам</h2>
 		<form method="post" action="">
 
 			<label for="name=field">
 				Ваше имя:
-			</label> <br>
+			</label> 
 			<input type="text" name="name" id="name=field" placeholder="Имя Фамилия">
 			<label for="email-field">Ваш e-mail:</label> 
 			<input type="email" name="email" id="email-field" placeholder="email@example.com"> 
 			<label for="letter-field">Текст письма:</label> 
 			<textarea id="letter-field" placeholder="В свободной форме"></textarea> 
-		<button type="submit">Отправить </button> <!--  Или лучше input? В академии говорят по разному-->-->
+		<button type="submit">Отправить </button> 
 		</form>
 	</section>
 </body> 
