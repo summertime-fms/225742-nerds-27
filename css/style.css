@@ -1,0 +1,186 @@
+
+
+/*Базовая стилизация */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+  body {
+    font-family: "Roboto","Arial", sans-serif; /* Надо ли прописыват шрифт для всех элементов что стилизованы ниже? Или прописать только в родителе body?  */
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    color: black;
+    font-style: normal;
+  }
+  a {
+      text-decoration: none;
+  }
+
+  /* Разное*/
+  .nav-menu a {
+      outline: none;
+  }
+  .nav-menu a:focus {
+    color: #FB565A;
+  }
+  .phone-number {
+      outline: none;
+  }
+  .phone-number:focus {
+    color: #FB565A;
+  }
+
+  /*Типографика*/
+  .nav-menu a {
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #000;
+  line-height: 30px;
+  font-weight: 500;
+  
+  }
+  .nav-menu ul {
+      list-style: none;
+  }
+  .nav-menu a:hover {
+      color: #FB565A;
+  }
+  .slide-heading {
+    font-size: 55px;
+    line-height: 55px;
+    font-weight: 500;
+  }
+  .slide p {
+    font-size: 16px;
+    line-height: 24px;
+    color: #283136;
+  }
+  .slide a {
+    font-size: 16px;
+    line-height: 18px;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+  }
+  .products {
+      list-style: none;
+  }
+  .products h3 {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #000000;
+  }
+  .products p {
+    font-size: 16px;
+    line-height: 24px;
+    color: #283136;
+  }
+  .button {
+    font-size: 16px;
+    font-weight: normal; /*Тот же вопрос что и со шрифтами. Можно ли задать жирность шрифта в родителе по умолчанию и прописывать ее только
+                           когда она не стандартная, в отдельных случаях, чтобы не писать лишний код? */
+    line-height: 18px; 
+    text-align: center; 
+    color: #FFFFFF;
+  }
+  .about-us-heading {
+font-weight: 500;
+font-size: 45px;
+line-height: 45px;
+  }
+  .about-us p {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #283136;
+  }
+  p.list-name {  
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #283136;
+    font-weight: 500;
+  }
+  .service {
+    list-style: none; font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+
+    color: #283136;
+  }
+.advantages p {
+    font-weight: bold;
+    text-align: center;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #000;
+
+}
+.advantages tr {
+
+font-weight: normal;
+font-size: 16px;
+line-height: 18px;
+color: #283136;
+}
+.advantages tr:first-of-type {
+    font-weight: bold;
+font-size: 45px;
+line-height: 10px;
+color: #000000;
+}
+.partners-list {
+    list-style: none;
+}
+.contacts p {
+font-weight: bold;
+font-size: 18px;
+line-height: 30px;
+text-transform: uppercase;
+color: #000000;
+}
+.contacts address {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+    color: #666666; 
+}
+.phone-number {
+font-style: normal;
+color: #666666;
+}
+.social-media {
+    list-style: none;
+}
+.discount {
+font-weight: bold;
+font-size: 36px;
+line-height: 36px;
+color: #000000;
+}
+.discount span {
+font-weight: normal;
+font-size: 16px;
+line-height: 22px;
+color: #444444;
+}
+
+/* Фоны и изображения
+header {
+    background: #F2F2F2;
+}
+.slide {
+    background: #F2F2F2;
+}
+*/

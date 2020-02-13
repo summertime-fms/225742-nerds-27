@@ -2,14 +2,15 @@
 <html lang="ru">
   <head>
 	<meta charset="utf-8">
-	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
     <title>HTML Academy: Нёрдс</title>
   </head>
   <body>
     <header>
-    	<nav>
-     		<a><img src="img/nerds-logo.svg" alt="Дизайн-студия Nёrds" width="160" height="65" ></a>
-   			 <ul> 
+    	<nav class="nav-menu">
+     		<a><img src="img/nerds-logo1.svg" alt="Дизайн-студия Nёrds" width="160" height="65" ></a>
+   			 <ul > 
    			 	<li><a href="">Студия</a></li>
    			 	<li><a href="">Клиенты</a></li>
    			 	<li><a href="nerds-catalog.html">Магазин</a></li>
@@ -24,84 +25,92 @@
     </header>
     <main> 
     	<h1 class="visually-hidden"> Дизайн-студия Нёрдс</h1>
-    	<div> 
-    		<p>Долго, дорого,<br> скрупулезно.</p> 
+    	<div class="slide"> 
+    		<span class="slide-heading">Долго, дорого,<br> скрупулезно.</span> 
     			<p>Математически выверенный дизайн<br> для вашего сайта или мобильного приложения
     		</p>
 			<img src="img/slide1.png" width="698" height="413" alt="Долго, дорого, скрупулезно.">
-			<a href="">Узнать больше</a>
+			<a href="" class="learnmore button">Узнать больше</a>
 		</div>
-		<div>
-			<p>
+		<div class="visually-hidden slide">
+			<span class="slide-heading">
 				Любим математику,
 			    как никто другой
-			</p>
+			</span>
 			<p>Никакого креатива, только математические формулы
 			   для расчета идеальных пропорций</p>
 			
 			<img src="img/slide2.png" width="698" height="413" alt="Любим математику, как никто другой!">
-			<a href="">Узнать больше</a>
+			<a href="" class="learnmore button">Узнать больше</a>
 		</div>
-		<p>
+		<div class="visually-hidden slide">
+		<span class="slide-heading">
 			Только ночь,<br> только хардкор!
-		</p>
+		</span>
 		<p>
 			Работать днем, как все? Мы против этого.<br>
 			Ближе к полуночи работа только начинается.
 		</p>
 			<img src="img/slide3.png" width="759" height="411" alt="Только ночь, только хардкор!">
-			<a href="">Узнать больше</a>
+			<a href="" class="learnmore button">Узнать больше</a>
     	</div>
     	<section> 
     		<h2 class="visually-hidden">Наши услуги</h2>
-    		<ul> 
+    		<ul class="products"> 
     			<li> 
     				<h3>Веб-сайты</h3>
     				
     				<p>Мир никогда не будет прежним после того, как увидит ваш сайт!</p>
-    				<a href="">Заказать</a>
+    				<a href="" class="button">Заказать</a>
     			</li>
     			<li> 
     				<h3>Приложения</h3>
     				
     				<p>Покорите топ-10 приложений в AppStore и GooglePlay</p>
-    				<a href="">Заказать</a>
+    				<a href="" class="button">Заказать</a>
     			</li>
     			<li> 
     				<h3>Презентации</h3>
     				
     				<p>Вы даже не представляете, насколько вы изумительны!</p>
-    				<a href="">Заказать</a>
+    				<a href="" class="button">Заказать</a>
     			</li>
     		</ul>
     	</section>
-    	<section>
+    	<section class="about-us">
     		<h2 class="visually-hidden">О нас:</h2>
-    		<p>Мы - маленькая, но гордая<br>
-    		дизайн студия из Краснодара.</p>
+    		<span class="about-us-heading">Мы - маленькая, но гордая<br>
+    		дизайн студия из Краснодара.</span>
     		<p> 
     			Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.
     		</p>
-    		<p>Выполняем заказы на разработку:</p>
-    		<ul> 
-    			<li>Веб-сайтов любой сложности</li>
+    		<p class="list-name">Выполняем заказы на разработку:</p>
+    		<ul class="service"> 
+    			<li>Веб-сайтов любой сложности</li>  <!--Как лучше сделать маркеры (красные черточки в макете) здесь? -->
     			<li>Мобильных приложений для iOS и Android</li>
     			<li>Слайдшоу и видео для корпоративных презентаций</li>
     		</ul>
-    		<div> 
+    		<div class="advantages"> 
     			<!--Картинку сделать через CSS -->
     			<p>С 2004 года любим точность во всем:</p>
-    			<ul> 
-    				<li><span>146%</span> Уровень самоотдачи</li>
-    				<li><span>100%</span> Соблюдение сроков</li> 
-    				<li><span>50%</span> Минимальная предоплата</li>
-    			</ul>	
+    			<table>
+					<tr>
+						<td>146<sup>%</sup></td>
+						<td>100<sup>%</sup></td>
+						<td>50<sup>%</sup></td>
+					</tr>
+					<tr>
+						<td> Уровень самоотдачи</td>
+						<td>Соблюдение сроков</td>
+						<td> Минимальная предоплата</td>
+    				</tr>
+    			</table>
     		</div>
     	
     	</section>
     	<section> 
     		<h2 class="visually-hidden">Наши партнеры:</h2>
-    		<ul> 
+    		<ul class="partners-list"> 
     			<li><a href="https://htmlacademy.ru/intensive/htmlcss" ><img src="img/logo-1.png" alt="html academy. Интерактивные онлайн курсы." width="173" height="84"></a></li>
     			<li><a href=""><img src="img/logo-2.png" alt="Барбершоп Бородинский" width="173" height="84"></a></li> 
     			<li><a href=""><img src="img/logo-3.png" alt="Пинк. Взгляните на жизнь иначе!" width="173" height="84"></a></li>  <!--Надо ли в пункты списка помещать замаскированный спан с текстом для доступности сайта? или alt у картинок вполне устраивает? -->
@@ -111,26 +120,26 @@
     	<section> 
 			<h2 class="visually-hidden">Контакты:</h2>
 			<img src="img/map.png" width="1440" height="416" alt="Адрес студии: Большая Конюшенная, дом 19/8, Санкт-Петербург">
-    		<div>
+    		<div class="contacts">
     		<p>NЁRDS DESIGN STUDIO</p>
     		<address>
     			191186, Санкт-Петербург,
     		ул. Б.Конюшенная, д. 19/8 <br>
-    		тел. <a href="tel:+78122757575"> +7(812)275-75-75</a>
+    		тел. <a href="tel:+78122757575" class="phone-number"> +7(812)275-75-75</a>
 			</address>
-			<a href="">Напишите нам</a>
+			<a href="" class="button">Напишите нам</a>
 			</div>
     	</section>
 
     </main>
 
     <footer>  
-      		<ul> 
+      		<ul class="social-media"> 
       			<li><a href="" ><span class="visually-hidden">Вконтакте</span></a></li>
       			<li><a href=""><span class="visually-hidden">Фейсбук</span></a></li>
       		    <li><a href=""><span class="visually-hidden">Инстаграм</span></a></li>
       		</ul>
-      	<p>Давайте дружить, это выгодно!<br> 
+      	<p class="discount">Давайте дружить, это выгодно!<br> 
           <span>Скидка 10% для друзей из социальных сетей.</span>
       	</p>
 
