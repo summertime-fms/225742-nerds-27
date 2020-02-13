@@ -92,6 +92,8 @@
     line-height: 18px; 
     text-align: center; 
     color: #FFFFFF;
+    border: none;
+    background-color: #FB565A;
   }
   .about-us-heading {
 font-weight: 500;
@@ -176,11 +178,17 @@ line-height: 22px;
 color: #444444;
 }
 
-/* Фоны и изображения
-header {
-    background: #F2F2F2;
+/* Фоны и изображения*/
+.advantages::before {
+    content: url(../img/nerds-illustration.jpg);
 }
-.slide {
-    background: #F2F2F2;
+.products li:first-of-type::before {
+    content: url(../img/illustration-1.png);
 }
-*/
+.products li:nth-of-type(2)::before {
+    content: url(../img/illustration-2.png);
+}
+.products li:last-of-type::before {
+    content: url(../img/illustration-3.png);
+}
+
