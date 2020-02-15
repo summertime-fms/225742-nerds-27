@@ -22,7 +22,13 @@
   a {
       text-decoration: none;
   }
-  
+  h1 {   /* В критериях написано что селектор по тегу может быть только a и body. Как иначе задать размер этому заголовку?  */ 
+    font-size: 55px;  
+  font-weight: 500;
+  }
+  fieldset {
+    border:0 none;
+ }
 
   /* Разное*/
   .nav-menu a {
@@ -188,6 +194,53 @@ font-weight: 500;
 font-size: 45px;
 line-height: 45px;
 }
+.write-us textarea {
+resize: none;;
+}
+.heading {
+  font-size: 18px;
+  font-weight: bold;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000;
+  text-transform: uppercase;
+}
+.projects-list {
+  list-style: none;
+}
+.catalog-button {
+  font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 18px;
+list-style: none;
+text-align: center;
+text-decoration: none;
+}
+.sort {
+  list-style: none;
+}
+.sort a {
+font-family: Roboto;
+font-style: normal;
+font-size: 14px;
+line-height: 18px;
+text-transform: uppercase;
+color: #000; 
+opacity: 0.3;
+}
+.sort a:hover {
+  color:#000;
+  opacity: 0.6;
+}
+.sort a:active {
+  color: #000000;
+  opacity: 1;
+}
+
 
 
 /* Фоны и изображения*/
@@ -268,4 +321,27 @@ line-height: 45px;
 }
 .social-media li:first-of-type {
   background-image: url(../img/vk-icon.svg);
+}
+.grid-sort {
+  list-style: none;
+}
+.grid-sort label {
+  font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 19px;
+color: #283136;
+}
+.features-sort {
+  list-style: none;
+}
+.features-sort label {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #283136;
+
 }
