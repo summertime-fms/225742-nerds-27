@@ -2,14 +2,15 @@
 <html lang="ru">
   <head>
 	<meta charset="utf-8">
-	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">	<link rel="stylesheet" href="css/normalize.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
     <title>HTML Academy: Нёрдс</title>
   </head>
   <body>
     <header>
     	<nav class="nav-menu">
-     		<a><img src="img/nerds-logo1.svg" alt="Дизайн-студия Nёrds" width="160" height="65" ></a>
+     		<a><img src="img/nerds-logo1.svg" alt="Дизайн-студия Nёrds" width="160" height="65" class="nerds-logo"></a>
    			 <ul > 
    			 	<li><a href="">Студия</a></li>
    			 	<li><a href="">Клиенты</a></li>
@@ -18,7 +19,7 @@
    			 </ul>
    			 <ul>
    			 	<li> 
-   			 		<a href="">Корзина</a>
+   			 		<a href="" class="basket">Корзина</a>
    			 	</li>
    			 </ul>	
 		</nav>
@@ -111,10 +112,10 @@
     	<section> 
     		<h2 class="visually-hidden">Наши партнеры:</h2>
     		<ul class="partners-list"> 
-    			<li><a href="https://htmlacademy.ru/intensive/htmlcss" ><img src="img/logo-1.png" alt="html academy. Интерактивные онлайн курсы." width="173" height="84"></a></li>
-    			<li><a href=""><img src="img/logo-2.png" alt="Барбершоп Бородинский" width="173" height="84"></a></li> 
-    			<li><a href=""><img src="img/logo-3.png" alt="Пинк. Взгляните на жизнь иначе!" width="173" height="84"></a></li>  <!--Надо ли в пункты списка помещать замаскированный спан с текстом для доступности сайта? или alt у картинок вполне устраивает? -->
-    			<li><a href=""><img src="img/logo-4.png" alt="Мишка. Милые штуки ручной работы для дома." width="173" height="84"></a></li>
+    			<li><a href="https://htmlacademy.ru/intensive/htmlcss" ><img src="img/htmlacdemy-logo.png" alt="html academy. Интерактивные онлайн курсы." width="199" height="68"></a></li>
+    			<li><a href=""><img class="partner-logo" src="img/borodinsli-logo.png" alt="Барбершоп Бородинский" width="209" height="90"></a></li> 
+    			<li><a href=""><img src="img/pink-logo.png" alt="Пинк. Взгляните на жизнь иначе!" width="185" height="52"></a></li>  <!--Надо ли в пункты списка помещать замаскированный спан с текстом для доступности сайта? или alt у картинок вполне устраивает? -->
+    			<li><a href=""><img src="img/mishka-logo.png" alt="Мишка. Милые штуки ручной работы для дома." width="173" height="84"></a></li>
     		</ul>
     	</section>
     	<section> 
@@ -144,7 +145,7 @@
       	</p>
 
     </footer>
-	<section class="visually-hidden">
+	<section class="visually-hidden write-us">
 		<h2>Напишите нам</h2>
 		<form method="post" action="">
 
@@ -155,8 +156,8 @@
 			<label for="email-field">Ваш e-mail:</label> 
 			<input type="email" name="email" id="email-field" placeholder="email@example.com"> 
 			<label for="letter-field">Текст письма:</label> 
-			<textarea id="letter-field placeholder="В свободной форме"></textarea> 
-		<button type="submit">Отправить </button> <
+			<textarea id="letter-field" placeholder="В свободной форме"></textarea> 
+		<button type="submit">Отправить </button> 
 		</form>
 	</section>
   </body>
