@@ -1,208 +1,223 @@
-
-
-/*Базовая стилизация */
+/* Основное*/
 .visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    clip: rect(0 0 0 0);
-    overflow: hidden;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+  }
+  *, *::before, *::after { 
+  box-sizing: border-box; 
   }
   body {
-    font-family: "Roboto","Arial", sans-serif; /* Надо ли прописыват шрифт для всех элементов что стилизованы ниже? Или прописать только в родителе body?  */
-    margin: 0;
-    padding: 0;
-    font-size: 14px;
-    color: black;
-    font-style: normal;
+  font-family: "Roboto","Arial", sans-serif; 
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  color: black;
+  font-style: normal;
   }
   a {
-      text-decoration: none;
+  text-decoration: none;
   }
-  h1 {   /* В критериях написано что селектор по тегу может быть только a и body. Как иначе задать размер этому заголовку?  */ 
-    font-size: 55px;  
-  font-weight: 500;
-  }
-  fieldset {
-    border:0 none;
+  .fieldset-border {
+  border: 0 none;
  }
-
-  /* Разное*/
-  .nav-menu a {
-      outline: none;
+ /*Фокус и аутлайн меню*/
+ .nav-menu a {
+  outline: none;
   }
   .nav-menu a:focus {
-    color: #FB565A;
+  color: #FB565A;
   }
   .phone-number {
-      outline: none;
+  outline: none;
   }
   .phone-number:focus {
-    color: #FB565A;
+  color: #FB565A;
   }
-
-  /*Типографика*/
+  /*Типографика главной*/
+  .shop-title {   
+  font-size: 55px;  
+  font-weight: 500;
+  font-family: Roboto, "Arial", sans-serif;
+  }
   .nav-menu a {
   font-size: 16px;
+  font-family: Roboto, "Arial", sans-serif;
   text-transform: uppercase;
   color: #000;
   line-height: 30px;
   font-weight: 500;
-  
   }
   .nav-menu ul {
-      list-style: none;
+  list-style: none;
   }
   .nav-menu a:hover {
-      color: #FB565A;
+  color: #FB565A;
   }
   .slide-heading {
-    font-size: 55px;
-    line-height: 55px;
-    font-weight: 500;
+  font-size: 55px;
+  font-family: Roboto, "Arial", sans-serif;
+  line-height: 55px;
+  font-weight: 500;
   }
   .slide p {
-    font-size: 16px;
-    line-height: 24px;
-    color: #283136;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: Roboto, "Arial", sans-serif;
+  color: #283136;
   }
   .slide a {
-    font-size: 16px;
-    line-height: 18px;
-    align-items: center;
-    text-align: center;
-    text-transform: uppercase;
-    color: #fff;
+  font-size: 16px;
+  line-height: 18px;
+  font-family: Roboto, "Arial", sans-serif;
+  text-transform: uppercase;
+  color: #fff;
   }
   .products {
-      list-style: none;
+  list-style: none;
   }
   .products h3 {
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 30px;
-    text-transform: uppercase;
-    color: #000000;
+  font-weight: bold;
+  font-family: Roboto, "Arial", sans-serif;
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #000000;
   }
   .products p {
-    font-size: 16px;
-    line-height: 24px;
-    color: #283136;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: Roboto, "Arial", sans-serif;
+  color: #283136;
   }
   .button {
-    font-size: 16px;
-    font-weight: normal; /*Тот же вопрос что и со шрифтами. Можно ли задать жирность шрифта в родителе по умолчанию и прописывать ее только
-                           когда она не стандартная, в отдельных случаях, чтобы не писать лишний код? */
-    line-height: 18px; 
-    text-align: center; 
-  }
+  font-size: 16px;
+  font-weight: normal; 
+  line-height: 18px; 
+  text-align: center; 
+  font-family: Roboto, "Arial", sans-serif;
+}
   .about-us-heading {
-font-weight: 500;
-font-size: 45px;
-line-height: 45px;
-  }
+  font-weight: 500;
+  font-family: Roboto, "Arial", sans-serif;
+  font-size: 45px;
+  line-height: 45px;
+ }
   .about-us p {
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 24px;
-    color: #283136;
-  }
+  font-weight: normal;
+  font-size: 16px;
+  font-family: Roboto, "Arial", sans-serif;
+  line-height: 24px;
+  color: #283136;
+}
   p.list-name {  
-    font-size: 16px;
-    line-height: 24px;
-    text-transform: uppercase;
-    color: #283136;
-    font-weight: 500;
-  }
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #283136;
+  font-family: Roboto, "Arial", sans-serif;
+  font-weight: 500;
+}
   .service {
-    list-style: none; font-weight: normal;
-    font-size: 16px;
-    line-height: 24px;
-
-    color: #283136;
-  }
+  list-style: none;
+  font-weight: normal;
+  font-size: 16px;
+  font-family: Roboto, "Arial", sans-serif;
+  line-height: 24px;
+  color: #283136;
+}
 .advantages p {
-    font-weight: bold;
-    text-align: center;
-    font-size: 16px;
-    line-height: 24px;
-    text-transform: uppercase;
-    color: #000;
+  font-weight: bold;
+  text-align: center;
+  font-family: Roboto, "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #000;
 
 }
 .advantages tr {
-
-font-weight: normal;
-font-size: 16px;
-line-height: 18px;
-color: #283136;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  font-family: Roboto, "Arial", sans-serif;
+  color: #283136;
 }
 .advantages tr:first-of-type {
-    font-weight: bold;
-font-size: 45px;
-line-height: 10px;
-color: #000000;
+  font-weight: bold;
+  font-size: 45px;
+  line-height: 10px;
+  font-family: Roboto, "Arial", sans-serif;
+  color: #000000;
 }
 .partners-list {
-    list-style: none;
+  list-style: none;
 }
 .contacts p {
-font-weight: bold;
-font-size: 18px;
-line-height: 30px;
-text-transform: uppercase;
-color: #000000;
+  font-weight: bold;
+  font-size: 18px;
+  font-family: Roboto, "Arial", sans-serif;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #000000;
 }
 .contacts address {
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 18px;
-    color: #666666; 
+  font-weight: normal;
+  font-size: 16px;
+  font-family: Roboto, "Arial", sans-serif;
+  line-height: 18px;
+  color: #666666; 
 }
 .phone-number {
-font-style: normal;
-color: #666666;
+  font-style: normal;
+  font-family: Roboto, "Arial", sans-serif;
+  color: #666666;
 }
 .social-media {
-    list-style: none;
+   list-style: none;
 }
 .discount {
-font-weight: bold;
-font-size: 36px;
-line-height: 36px;
-color: #000000;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 36px;
+  font-family: Roboto, "Arial", sans-serif;
+  color: #000000;
 }
 .discount span {
-font-weight: normal;
-font-size: 16px;
-line-height: 22px;
-color: #444444;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  font-family: Roboto, "Arial", sans-serif;
+  color: #444444;
 }
 .write-us label {
-font-weight: bold;
-font-size: 16px;
-line-height: 18px;
-
-
-color: #000000;
+  font-weight: bold;
+  font-family: Roboto, "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  color: #000000;
 }
 .write-us h2 {
-font-weight: 500;
-font-size: 45px;
-line-height: 45px;
+  font-weight: 500;
+  font-size: 45px;
+  font-family: Roboto, "Arial", sans-serif;
+  line-height: 45px;
 }
 .write-us textarea {
-resize: none;;
+  resize: none;
 }
+/*Типогрфика каталога*/
 .heading {
   font-size: 18px;
   font-weight: bold;
   font-style: normal;
+  font-family: Roboto, "Arial", sans-serif;
   line-height: 1;
-  letter-spacing: normal;
   text-align: left;
   color: #000;
   text-transform: uppercase;
@@ -212,25 +227,27 @@ resize: none;;
 }
 .catalog-button {
   font-family: Roboto;
-font-style: normal;
-font-weight: 500;
-font-size: 16px;
-line-height: 18px;
-list-style: none;
-text-align: center;
-text-decoration: none;
-}
-.sort {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  font-family: Roboto, "Arial", sans-serif;
+  line-height: 18px;
   list-style: none;
+  text-align: center;
+  text-decoration: none;
+}
+
+.sort {
+list-style: none;
 }
 .sort a {
-font-family: Roboto;
-font-style: normal;
-font-size: 14px;
-line-height: 18px;
-text-transform: uppercase;
-color: #000; 
-opacity: 0.3;
+  font-family: Roboto, Arial, sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #000; 
+  opacity: 0.3;
 }
 .sort a:hover {
   color:#000;
@@ -240,25 +257,82 @@ opacity: 0.3;
   color: #000000;
   opacity: 1;
 }
+/*Построение сетки главной */
+.main-header {
+  min-height: 67px;
+  margin-bottom: 10px;
+  border-top: 1px solid transparent;
+}
+.main-navigation {
+  min-height: 67px;
+}
+.main-header-logo {
+  
+  width: 160px;
+  height: 67px;
 
-
+  
+}
+.site-navigation {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  
+  width:438px;
+}
+.user-navigation {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width:180px;
+  min-height: 50px;
+}
+.main-navigation {
+  display: flex;
+  justify-content: space-between;
+}
+.header-wrapper {
+  
+  width: 1160px;
+  margin-top: 49px;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+.main-navigation-wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
 
 /* Фоны и изображения*/
 .advantages::before {
-    content: url(../img/nerds-illustration.jpg);
+  content: url(../img/nerds-illustration.jpg);
 }
 .products li:first-of-type::before {
-    content: url(../img/illustration-1.png);
+  content: url(../img/illustration-1.png);
 }
 .products li:nth-of-type(2)::before {
-    content: url(../img/illustration-2.png);
+  content: url(../img/illustration-2.png);
 }
 .products li:last-of-type::before {
-    content: url(../img/illustration-3.png);
+  content: url(../img/illustration-3.png);
 }
+.vk-icon {
+  background-image: url(../img/vk-icon.svg);
+  display: block;
+  width: 79px;
+  height:79px;
+  border-radius: 50%;
+  background-color: #e1e1e1;
+}
+.main-header {
+  background-color: #f2f2f2;
+}
+
 /* Cтилизация элементов при наведении по стайлгайду */
 .nerds-logo:hover {
-    opacity: 0.8;
+  opacity: 0.8;
 }
 .nerds-logo:active {
   opacity:0.3;
@@ -306,12 +380,6 @@ opacity: 0.3;
   opacity: 0.1;
 }
 /* Иконки соц сетей*/
-.social-media li {
-  width: 79px;
-  height:79px;
-  border-radius: 50%;
-  background-color: #e1e1e1;
-}
 .social-media li:hover {
  background-color: #e74246;
 }
@@ -319,19 +387,17 @@ opacity: 0.3;
   box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
   background-color: #d7373b;
 }
-.social-media li:first-of-type {
-  background-image: url(../img/vk-icon.svg);
-}
+
 .grid-sort {
   list-style: none;
 }
 .grid-sort label {
   font-family: Roboto;
-font-style: normal;
-font-weight: normal;
-font-size: 16px;
-line-height: 19px;
-color: #283136;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #283136;
 }
 .features-sort {
   list-style: none;
@@ -343,5 +409,4 @@ color: #283136;
   font-size: 16px;
   line-height: 19px;
   color: #283136;
-
 }
