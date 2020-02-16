@@ -78,10 +78,7 @@
   text-transform: uppercase;
   color: #fff;
   }
-  .products {
-  list-style: none;
-  }
-  .products h3 {
+  .products-list h3 {
   font-weight: bold;
   font-family: Roboto, "Arial", sans-serif;
   font-size: 24px;
@@ -89,7 +86,7 @@
   text-transform: uppercase;
   color: #000000;
   }
-  .products p {
+  .products-list p {
   font-size: 16px;
   line-height: 24px;
   font-family: Roboto, "Arial", sans-serif;
@@ -257,21 +254,23 @@ list-style: none;
   color: #000000;
   opacity: 1;
 }
-/*Построение сетки главной */
+/*ПОСТРОЕНИЕ СЕТКИ ГЛАВНОЙ СТРАНИЦЫ 
+  ***хэдер*** */
 .main-header {
   min-height: 67px;
-  margin-bottom: 10px;
   border-top: 1px solid transparent;
+}
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1160px;
 }
 .main-navigation {
   min-height: 67px;
 }
 .main-header-logo {
-  
   width: 160px;
   height: 67px;
-
-  
 }
 .site-navigation {
   list-style: none;
@@ -292,30 +291,43 @@ list-style: none;
   justify-content: space-between;
 }
 .header-wrapper {
-  
-  width: 1160px;
   margin-top: 49px;
-  margin-left: auto;
-  margin-right: auto;
-  
 }
 .main-navigation-wrapper {
   display: flex;
   width: 100%;
   justify-content: space-between;
 }
+/* Сетка слайдера*/
+.features {
+  margin-bottom: 80px;
+}
+/*Сетка блока с услугами */
+.products-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  min-height: 347px;
+  display: flex;
+  justify-content: space-between;
+ 
+  }
+  .products-list li {
+    width: 300px;
+  }
+
 
 /* Фоны и изображения*/
 .advantages::before {
   content: url(../img/nerds-illustration.jpg);
 }
-.products li:first-of-type::before {
+.products-list li:first-of-type::before {
   content: url(../img/illustration-1.png);
 }
-.products li:nth-of-type(2)::before {
+.products-list li:nth-of-type(2)::before {
   content: url(../img/illustration-2.png);
 }
-.products li:last-of-type::before {
+.products-list li:last-of-type::before {
   content: url(../img/illustration-3.png);
 }
 .vk-icon {
@@ -326,7 +338,8 @@ list-style: none;
   border-radius: 50%;
   background-color: #e1e1e1;
 }
-.main-header {
+.main-header,
+.features {
   background-color: #f2f2f2;
 }
 
