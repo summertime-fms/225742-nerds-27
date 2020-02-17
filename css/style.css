@@ -175,9 +175,7 @@
   font-family: Roboto, "Arial", sans-serif;
   color: #666666;
 }
-.social-media {
-   list-style: none;
-}
+
 .discount {
   font-weight: bold;
   font-size: 36px;
@@ -315,7 +313,12 @@ list-style: none;
   .products-list li {
     width: 300px;
   }
-
+/*Футер */
+ul.social-media {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
 
 /* Фоны и изображения*/
 .advantages::before {
@@ -330,13 +333,27 @@ list-style: none;
 .products-list li:last-of-type::before {
   content: url(../img/illustration-3.png);
 }
-.vk-icon {
-  background-image: url(../img/vk-icon.svg);
+.social-media a {
   display: block;
   width: 79px;
   height:79px;
-  border-radius: 50%;
   background-color: #e1e1e1;
+  border-radius: 50%;
+  outline: none;
+
+}
+.icon {
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.vk-icon {
+  background-image: url(../img/vk-icon.svg);
+}
+.fb-icon {
+  background-image: url(../img/fb-icon.svg);
+}
+.inst-icon {
+  background-image: url(../img/insta-icon.svg);
 }
 .main-header,
 .features {
@@ -393,14 +410,16 @@ list-style: none;
   opacity: 0.1;
 }
 /* Иконки соц сетей*/
-.social-media li:hover {
+.social-media a:hover {
  background-color: #e74246;
 }
-.social-media li:active {
-  box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
-  background-color: #d7373b;
+.social-media a:focus {
+  background-color: #e74246;
 }
-
+.social-media a:active {
+  box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
+  background-color: #d7373b; 
+}
 .grid-sort {
   list-style: none;
 }
