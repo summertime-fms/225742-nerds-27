@@ -28,13 +28,32 @@
 		</nav>
 		</div>
     </header>
-    <main> 
-    	<h1 class="shop-title">Магазин готовых шаблонов</h1>
-    	<section> 
+    <main class="container"> 
+		<h1 class="shop-title">Магазин готовых шаблонов</h1>
+	<!--	<p class="heading">Сортировать:</p> -->
+		<div class="sort-wrapper">
+    		<ul  class="sort">
+    			<li><a href="">По цене</a></li> 
+    			<li><a href="">По типу</a></li> 
+    			<li><a href="">По названию</a></li>
+			</ul>
+			<ul>
+				<li>
+					<a href=""><span class="visually-hidden">Сначала</span></a>
+				</li>
+				<li>
+					<a href=""><span class="visually-hidden">С конца</span></a>
+				</li>
+			</ul>
+		</div>
+		<div class="catalog-columns">
+    	<section class="filters"> 
 			<h2 class="visually-hidden">Фильтр проектов</h2>
 			<form method="post" action="">
-			<p class="heading"> Стоимость:</p>
-			<span></span> <!--  ползунок стоимости -->
+				<div class="price-sort">
+					<p class="heading"> Стоимость:</p>
+					<span></span> <!--  ползунок стоимости -->
+				</div>
 			<fieldset class="fieldset-border">   
 				<legend class="heading">Сетка:</legend>
 				<ul class="grid-sort">
@@ -84,61 +103,45 @@
 				</fieldset>
 
 			</form>
-    		
-    		
-    		<p class="heading">Сортировать:</p>
-    		<ul  class="sort">
-    			<li><a href="">По цене</a></li> 
-    			<li><a href="">По типу</a></li> 
-    			<li><a href="">По названию</a></li>
-			</ul>
-			<ul>
-				<li >
-			<a href=""><span class="visually-hidden">Сначала</span></a>
-			</li>
-			<li>
-				<a href=""><span class="visually-hidden">С конца</span></a>
-			</li>
-			</ul>
-    		
     	</section>
-    	<section> 
+    	<section class="catalog"> 
     		<h2 class="visually-hidden">Список проектов</h2>
-    		<ul class="projects-list"> 
-    			<li>
+    		<ul class="catalog-list"> 
+    			<li class="catalog-item">
     				<a href=""><h3 class="heading">Sedona</h3></a>
     				<img src="img/img-sedona.jpg" width="360" height="576" alt="Sedona">
     			</li>
-    			<li>
+    			<li class="catalog-item">
     				<a href=""><h3 class="heading">Pink</h3></a>
     			   <img src="img/img-pink.jpg" width="360" height="576" alt="Pink"> 
     			</li>
-    			<li>
+    			<li class="catalog-item">
     				<a href=""><h3 class="heading">Barbershop Borodinsky</h3></a>
     				<img src="img/img-barbershop.jpg" width="360" height="576" alt="Borodinsky" >
     			</li>
-    			<li>
+    			<li class="catalog-item">
     				<a href=""><h3 class="heading">Mishka</h3></a>
     				<img src="img/img-mishka.jpg" width="360" height="576" alt="Mishka"> 
     			</li>
-    			<li>
+    			<li class="catalog-item">
     				<a href=""><h3 class="heading">A-plus</h3></a>
     				<img src="img/img-aplus.jpg" width="360" height="576" alt="A-plus"> 
     			</li>
-    			<li>
+    			<li class="catalog-item">
     				<a href=""><h3 class="heading">Kvast</h3></a>
     				<img src="img/img-kvast.jpg" width="360" height="576" alt="Kvast"> 
     			</li>
-    		</ul>
-    	
-
-    	</section>
-    	<ul class="pages"> 
-    		<li><a class="catalog-button">1</a></li>
-    		<li><a href="" class="catalog-button">2</a></li>
-    		<li><a href="" class="catalog-button">3</a></li> 
-    	</ul>
-    	<a href="" class="catalog-button">Следующая</a>
+			</ul>
+			<div class="pagination-wrapper">
+			<ul class="pagination"> 
+				<li><a class="catalog-button">1</a></li>
+				<li><a href="" class="catalog-button">2</a></li>
+				<li><a href="" class="catalog-button">3</a></li> 
+			</ul>
+			<a href="" class="catalog-button">Следующая</a>
+			</div>
+		</div>
+	    
     	<section> 
 			<h2 class="visually-hidden">Контакты:</h2>
 			<img src="img/map.png" width="1440" height="416" alt="Санкт-Петербург, ул. Большая Конюшенная, д.19/8">
