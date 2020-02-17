@@ -167,21 +167,33 @@
 	</p>
 
 </footer>
-	<section class="write-us">
-		<h2>Напишите нам</h2>
-		<div class="write-us-form">
-		<form method="post" action="">
-
-			<label for="name=field">
-				Ваше имя:
-			</label>
-			<input type="text" name="name" id="name=field" placeholder="Имя Фамилия">
-			<label for="email-field">Ваш e-mail:</label> 
-			<input type="email" name="email" id="email-field" placeholder="email@example.com"> 
-			<label for="letter-field">Текст письма:</label> 
-			<textarea id="letter-field" placeholder="В свободной форме"></textarea> 
-		<button type="submit" class="button button-send">Отправить </button> 
+<section>
+	<div class="write-us">
+		<div class="write-us-container">
+		<h2 class="write-us-heading">Напишите нам</h2>
+		<form method="post" action="" class="write-us-form">
+			<div class="user-data">
+			<p>
+				<label for="name=field">
+					Ваше имя:
+				</label>
+				<input type="text" name="name" id="name=field" placeholder="Имя Фамилия">
+				
+			</p>
+			<p>
+				<label for="email-field">Ваш e-mail:</label> 
+				<input type="email" name="email" id="email-field" placeholder="email@example.com"> 
+			</p>
+		</div>
+			<p>
+				<label for="letter-field">Текст письма:</label> 
+				<textarea id="letter-field" placeholder="В свободной форме"></textarea> 
+			</p>
+			<p>
+				<button type="submit" class="button button-send">Отправить </button> 
+			</p>
 		</form>
+		</div>
 		</div>
 	</section>
 </body> 
