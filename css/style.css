@@ -326,6 +326,20 @@ ul.social-media {
 p.discount {
   margin-right: 139px;
 }
+/*CЕТКА КАТАЛОГА
+ ***Список проектов***/
+.projects-list {
+  width:760px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* Сетка блока Напишите нам*/
+
 
 /* Фоны и изображения*/
 .advantages::before {
@@ -365,6 +379,7 @@ p.discount {
 .main-header,
 .features {
   background-color: #f2f2f2;
+  background-size: 100%;
 }
 
 /* Cтилизация элементов при наведении по стайлгайду */
@@ -394,26 +409,53 @@ p.discount {
   border: none;
   background-color: #fb565a;
   display: block;
-  width: 160px;
+  width: 240px;
   height: 50px;
-
+  text-transform: uppercase;
+  font-weight: 500;
+  border-radius: 2%;
+  padding-top: 17px;
+  padding-right: 55px;
+  padding-bottom: 20px;
+  padding-left: 53px;
+  text-align: center;
+}
+.button-order{
+  width: 160px;
+  padding-top: 15px;
+  padding-left: 39px;
+  padding-bottom: 18px;
+  padding-right: 39px;
+}
+.button-write-us {
+  padding-top: 17px;
+  padding-right: 47px;
+  padding-bottom: 23px;
+  padding-left: 36px;
+  width:220px;
+}
+.button-send {
+  width:260px;
 }
 .button:hover {
   background-color: #e74246;
 }
 .button:active {
-  opacity: 0.3;
   box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
   background-color: #d7373b;
 }
 /*Партнеры*/
-.partners-list li {
+.partners-list a {
+  outline: none;
   opacity: 0.3;
 }
-.partners-list li:hover {
+.partners-list a:focus{
   opacity: 1;
 }
-.partners-list li:active {
+.partners-list a:hover {
+  opacity: 1;
+}
+.partners-list a:active {
   opacity: 0.1;
 }
 /* Иконки соц сетей*/
@@ -426,6 +468,7 @@ p.discount {
 .social-media a:active {
   box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
   background-color: #d7373b; 
+  
 }
 .grid-sort {
   list-style: none;
