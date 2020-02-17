@@ -319,6 +319,13 @@ ul.social-media {
   padding: 0;
   list-style: none;
 }
+.main-footer {
+  display: flex;
+  justify-content: space-between;
+}
+p.discount {
+  margin-right: 139px;
+}
 
 /* Фоны и изображения*/
 .advantages::before {
