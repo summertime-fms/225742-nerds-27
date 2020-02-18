@@ -29,29 +29,32 @@
 		</nav>
 		</div>
     </header>
-	<main> 
+	<main class="container"> 
 		<section class="features">
-		<div class="container">
     	<h1 class="visually-hidden"> Дизайн-студия Нёрдс</h1>
     	<div class="slide"> 
+			<div class="slide-description">
     		<span class="slide-heading">Долго, дорого,<br> скрупулезно.</span> 
     			<p>Математически выверенный дизайн<br> для вашего сайта или мобильного приложения
-    		</p>
-			<img src="img/slide1.png" width="698" height="413" alt="Долго, дорого, скрупулезно.">
-			<a href="" class="learnmore button">Узнать больше</a> 
+			</p>
+			<a href="" class="learnmore button">Узнать больше</a>
+			</div>
+			<img src="img/slide1.png" class="slider-img" width="698" height="413" alt="Долго, дорого, скрупулезно.">
 		</div>
 		<div class="visually-hidden slide">
+			<div class="slide-description">
 			<span class="slide-heading">
 				Любим математику,
 			    как никто другой
 			</span>
 			<p>Никакого креатива, только математические формулы
 			   для расчета идеальных пропорций</p>
-			
-			<img src="img/slide2.png" width="698" height="413" alt="Любим математику, как никто другой!">
 			<a href="" class="learnmore button">Узнать больше</a>
+			</div>
+			<img src="img/slide2.png"  class="slider-img" width="698" height="413" alt="Любим математику, как никто другой!">
 		</div>
 		<div class="visually-hidden slide">
+			<div class="slide-description">
 		<span class="slide-heading">
 			Только ночь,<br> только хардкор!
 		</span>
@@ -59,10 +62,12 @@
 			Работать днем, как все? Мы против этого.<br>
 			Ближе к полуночи работа только начинается.
 		</p>
-			<img src="img/slide3.png" width="759" height="411" alt="Только ночь, только хардкор!">
 			<a href="" class="learnmore button">Узнать больше</a>
+			</div>
+			<img src="img/slide3.png" class="slider-img" width="759" height="411" alt="Только ночь, только хардкор!">
+			
 		</div>
-		</div>
+		
 		</section>
 		</div>
     	<section class="products container"> 
@@ -90,10 +95,11 @@
     		</ul>
     	</section>
     	<section class="about-us">
-    		<h2 class="visually-hidden">О нас:</h2>
+			<h2 class="visually-hidden">О нас:</h2>
+			<div class="about-us-column">
     		<span class="about-us-heading">Мы - маленькая, но гордая<br>
     		дизайн студия из Краснодара.</span>
-    		<p> 
+    		<p class="about-us-description"> 
     			Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.
     		</p>
     		<p class="list-name">Выполняем заказы на разработку:</p>
@@ -101,7 +107,8 @@
     			<li>Веб-сайтов любой сложности</li>  <!--Как лучше сделать маркеры (красные черточки в макете) здесь? -->
     			<li>Мобильных приложений для iOS и Android</li>
     			<li>Слайдшоу и видео для корпоративных презентаций</li>
-    		</ul>
+			</ul>
+			</div>
     		<div class="advantages"> 
     			<!--Картинку сделать через CSS -->
     			<p>С 2004 года любим точность во всем:</p>

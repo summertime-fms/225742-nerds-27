@@ -267,7 +267,7 @@ list-style: none;
 .main-header {
   min-height: 67px;
   border-top: 1px solid transparent;
-  padding-bottom: 86px;
+ 
 }
 .container {
   margin-left: auto;
@@ -311,6 +311,18 @@ list-style: none;
 .features {
   margin-bottom: 80px;
 }
+.slide-description {  /*Совсем не уверен в правильности сетки. Если не сложно, распиши какой блок сайта каким способом лучше позиционировать и почему. Где флексы а где блочная модель */
+  min-height: 266px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.slide {
+  display: flex;
+  min-height: 266px;
+  justify-content: space-around;
+  align-items: center;
+}
 /*Сетка блока с услугами */
 .products-list {
   list-style: none;
@@ -323,6 +335,16 @@ list-style: none;
   }
   .products-list li {
     width: 300px;
+  }
+  /*Блок О нас */
+  .about-us-column {
+    min-height: 370px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .about-us-description {
+    width:614px;  /*В макете указана 614 но на моем экране такая ширина отображается немного не так( И в целом с макетом много расхождений из за этого. Как вообще с этим работать? указывать все точь в точь как в макете даже если на моем экране будет по другому? */
   }
 /*Футер */
 ul.social-media {
