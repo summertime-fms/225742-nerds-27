@@ -466,10 +466,10 @@ p.discount {
 .inst-icon {
   background-image: url(../img/insta-icon.svg);
 }
-.main-header,
-.features {
-  background-color: #f2f2f2;
-  background-size: 100%;
+
+.background-color-wrapper{
+  background-color:  #f2f2f2;
+  min-height: 355px;
 }
 
 
