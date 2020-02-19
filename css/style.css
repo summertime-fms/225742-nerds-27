@@ -23,60 +23,120 @@
   a {
   text-decoration: none;
   }
+  .container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1160px;  
+  }
   .fieldset-border {
   border: 0 none;
- }
- /*Фокус и аутлайн меню*/
- .nav-menu a {
-  outline: none;
   }
-  .nav-menu a:focus {
-  color: #FB565A;
+  .button {
+    font-size: 16px;
+    font-weight: normal; 
+    line-height: 18px; 
+    text-align: center; 
+    }
+  /* Главная*/
+  .main-header {
+  min-height: 67px;
+  border-top: 1px solid transparent;
   }
-  .phone-number {
-  outline: none;
+  .main-navigation {
+  min-height: 67px;
+
+  display: flex;
+  justify-content: space-between;
   }
-  .phone-number:focus {
-  color: #FB565A;
+  .main-header-logo {
+  width: 160px;
+  height: 67px;
   }
-  /*Типографика главной*/
-  
+  .site-navigation {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width:438px;
+  }
+  .user-navigation {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width:180px;
+  min-height: 50px;
+  }
+  .header-wrapper {
+  margin-top: 49px;
+  }
+  .main-navigation-wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  }
   .nav-menu a {
   font-size: 16px;
-  font-family: Roboto, "Arial", sans-serif;
+  font-style: normal;
   text-transform: uppercase;
   color: #000;
   line-height: 30px;
   font-weight: 500;
+
+  outline: none;
   }
-  .nav-menu ul {
-  list-style: none;
-  }
+  .nav-menu a:focus,
   .nav-menu a:hover {
   color: #FB565A;
   }
+  .slide-description {
+  min-height: 266px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  }
+  .slide {
+  display: flex;
+  min-height: 266px;
+  justify-content: space-around;
+  align-items: center;
+  }
   .slide-heading {
   font-size: 55px;
-  font-family: Roboto, "Arial", sans-serif;
   line-height: 55px;
   font-weight: 500;
   }
   .slide p {
   font-size: 16px;
   line-height: 24px;
-  font-family: Roboto, "Arial", sans-serif;
+  font-weight: 400;
   color: #283136;
   }
   .slide a {
   font-size: 16px;
   line-height: 18px;
-  font-family: Roboto, "Arial", sans-serif;
+  font-weight: 500;
   text-transform: uppercase;
   color: #fff;
   }
+  .products-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  min-height: 347px;
+  display: flex;
+  justify-content: space-between;
+  }
+  .products-list li {
+  width: 300px;
+  }
+  .about-us-column {
+  min-height: 370px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  }
   .products-list h3 {
-  font-weight: bold;
-  font-family: Roboto, "Arial", sans-serif;
+  font-weight: 700;
+  font-style: normal;
   font-size: 24px;
   line-height: 30px;
   text-transform: uppercase;
@@ -85,142 +145,148 @@
   .products-list p {
   font-size: 16px;
   line-height: 24px;
-  font-family: Roboto, "Arial", sans-serif;
   color: #283136;
   }
-  .button {
-  font-size: 16px;
-  font-weight: normal; 
-  line-height: 18px; 
-  text-align: center; 
-  font-family: Roboto, "Arial", sans-serif;
-}
+  .products-list li:first-of-type::before {
+  content: url(../img/illustration-1.png);
+  }
+  .products-list li:nth-of-type(2)::before {
+  content: url(../img/illustration-2.png);
+  }
+  .products-list li:last-of-type::before {
+  content: url(../img/illustration-3.png);
+  }
   .about-us-heading {
   font-weight: 500;
-  font-family: Roboto, "Arial", sans-serif;
   font-size: 45px;
   line-height: 45px;
- }
-  .about-us p {
-  font-weight: normal;
+  }
+  .about-us-description {
+  font-weight: 400;
   font-size: 16px;
-  font-family: Roboto, "Arial", sans-serif;
   line-height: 24px;
   color: #283136;
-}
-  p.list-name {  
+ 
+  width:614px;
+  } 
+  .list-name {  
   font-size: 16px;
   line-height: 24px;
   text-transform: uppercase;
   color: #283136;
-  font-family: Roboto, "Arial", sans-serif;
   font-weight: 500;
-}
+  }
   .service {
   list-style: none;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 16px;
-  font-family: Roboto, "Arial", sans-serif;
   line-height: 24px;
   color: #283136;
-}
-.advantages p {
-  font-weight: bold;
+  }
+  .advantages p {
+  font-weight: 700;
   text-align: center;
-  font-family: Roboto, "Arial", sans-serif;
   font-size: 16px;
   line-height: 24px;
   text-transform: uppercase;
   color: #000;
-
-}
-.advantages tr {
+  }
+  .advantages tr {
   font-weight: normal;
   font-size: 16px;
   line-height: 18px;
-  font-family: Roboto, "Arial", sans-serif;
   color: #283136;
-}
-.advantages tr:first-of-type {
+  }
+  .advantages tr:first-of-type {
   font-weight: bold;
   font-size: 45px;
   line-height: 10px;
-  font-family: Roboto, "Arial", sans-serif;
   color: #000000;
-}
-.partners-list {
+  }
+  .advantages::before {
+  content: url(../img/nerds-illustration.jpg);
+  }
+  .partners-list {
   list-style: none;
-}
-.contacts p {
+  }
+  .contacts p {
   font-weight: bold;
   font-size: 18px;
-  font-family: Roboto, "Arial", sans-serif;
   line-height: 30px;
   text-transform: uppercase;
   color: #000000;
-}
-.contacts address {
+  }
+  .contacts address {
   font-weight: normal;
   font-size: 16px;
-  font-family: Roboto, "Arial", sans-serif;
   line-height: 18px;
   color: #666666; 
-}
-.phone-number {
+  }
+  .phone-number {
   font-style: normal;
-  font-family: Roboto, "Arial", sans-serif;
   color: #666666;
-}
-
-.discount {
+  outline: none;
+  }
+  .phone-number:focus {
+  color: #FB565A;
+  }
+  .main-footer p {
   font-weight: bold;
   font-size: 36px;
   line-height: 36px;
-  font-family: Roboto, "Arial", sans-serif;
   color: #000000;
-}
-.discount span {
+
+  margin-right: 139px;
+  }
+  .social-media {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  }
+  .social-media a {
+  display: block;
+  width: 79px;
+  height:79px;
+  background-color: #e1e1e1;
+  border-radius: 50%;
+  outline: none;
+  }
+  .icon {
+  background-position: center;
+  background-repeat: no-repeat;
+  }
+  .vk-icon {
+  background-image: url(../img/vk-icon.svg);
+  }
+  .fb-icon {
+  background-image: url(../img/fb-icon.svg);
+  }
+  .inst-icon {
+  background-image: url(../img/insta-icon.svg);
+  }
+  .main-footer span {
   font-weight: normal;
   font-size: 16px;
   line-height: 22px;
-  font-family: Roboto, "Arial", sans-serif;
   color: #444444;
-}
-.write-us label {
-  font-weight: bold;
-  font-family: Roboto, "Arial", sans-serif;
-  font-size: 16px;
-  line-height: 18px;
-  color: #000000;
-}
-.write-us h2 {
-  font-weight: 500;
-  font-size: 45px;
-  font-family: Roboto, "Arial", sans-serif;
-  line-height: 45px;
-}
-
-.write-us input,
-.write-us textarea {
-  
-  font-family: Roboto, "Arial", sans-serif;
-  font-size: 16px;
-  font-weight: normal;
-}
-::-webkit-input-placeholder,
-::-moz-placeholder,
-:-moz-placeholder,
-:-ms-input-placeholder   {
-  color: rgba(68, 68, 68, 0.5);
-}
-/*Типогрфика каталога*/
-.shop-title {   
+  }
+  .main-footer {
+  display: flex;
+  justify-content: space-between;
+  }
+/*Каталог*/
+  .shop-title {   
   font-size: 55px;  
   font-weight: 500;
   font-family: Roboto, "Arial", sans-serif;
   text-align: center;
+
+  margin: 0;
+  margin-bottom: 176px;
+  padding: 0;
+  min-height: 43px;
   }
-.heading {
+  .heading {
   font-size: 18px;
   font-weight: bold;
   font-style: normal;
@@ -229,8 +295,8 @@
   text-align: left;
   color: #000;
   text-transform: uppercase;
-}
-.catalog-button {
+  }
+  .catalog-button {
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
@@ -240,12 +306,15 @@
   list-style: none;
   text-align: center;
   text-decoration: none;
-}
-
-.sort {
-list-style: none;
-}
-.sort a {
+  }
+  .catalog-columns {
+  display: flex;
+  justify-content: space-around;
+  }
+  .sort {
+  list-style: none;
+  }
+  .sort a {
   font-family: Roboto, Arial, sans-serif;
   font-style: normal;
   font-size: 14px;
@@ -253,125 +322,46 @@ list-style: none;
   text-transform: uppercase;
   color: #000; 
   opacity: 0.3;
-}
-.sort a:hover {
+  }
+  .sort a:hover {
   color:#000;
   opacity: 0.6;
-}
-.sort a:active {
+  }
+  .sort a:active {
   color: #000000;
   opacity: 1;
-}
-/*ПОСТРОЕНИЕ СЕТКИ ГЛАВНОЙ СТРАНИЦЫ 
-  ***хэдер*** */
-.main-header {
-  min-height: 67px;
-  border-top: 1px solid transparent;
- 
-}
-.container {
-  margin-left: auto;
-  margin-right: auto;
-  width: 1160px;
-}
-.main-navigation {
-  min-height: 67px;
-}
-.main-header-logo {
-  width: 160px;
-  height: 67px;
-}
-.site-navigation {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  
-  width:438px;
-}
-.user-navigation {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  width:180px;
-  min-height: 50px;
-}
-.main-navigation {
-  display: flex;
-  justify-content: space-between;
-}
-.header-wrapper {
-  margin-top: 49px;
-}
-.main-navigation-wrapper {
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-}
-/* Сетка слайдера*/
-.features {
-  margin-bottom: 80px;
-}
-.slide-description {  /*Совсем не уверен в правильности сетки. Если не сложно, распиши какой блок сайта каким способом лучше позиционировать и почему. Где флексы а где блочная модель */
-  min-height: 266px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
-.slide {
-  display: flex;
-  min-height: 266px;
-  justify-content: space-around;
-  align-items: center;
-}
-/*Сетка блока с услугами */
-.products-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  min-height: 347px;
-  display: flex;
-  justify-content: space-between;
- 
   }
-  .products-list li {
-    width: 300px;
-  }
-  /*Блок О нас */
-  .about-us-column {
-    min-height: 370px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-  }
-  .about-us-description {
-    width:614px;  /*В макете указана 614 но на моем экране такая ширина отображается немного не так( И в целом с макетом много расхождений из за этого. Как вообще с этим работать? указывать все точь в точь как в макете даже если на моем экране будет по другому? */
-  }
-/*Футер */
-ul.social-media {
-  margin: 0;
+  .filters {
+  width: 261px;
+  } 
+  .sort-wrapper {
   padding: 0;
+  margin: 0;
+  margin-bottom: 57px;
+  }
+  .grid-sort {
   list-style: none;
-}
-.main-footer {
-  display: flex;
-  justify-content: space-between;
-}
-p.discount {
-  margin-right: 139px;
-}
-/*CЕТКА КАТАЛОГА*/
-.shop-title {
-  margin: 0;
-  margin-bottom: 176px;
-  padding: 0;
-  min-height: 43px;
-}
-.catalog-columns {
-  display: flex;
-  justify-content: space-around;
-}
- /***Список проектов** */
-.catalog-list {
+  }
+  .grid-sort label {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #283136;
+  }
+  .features-sort {
+  list-style: none;
+  }
+  .features-sort label {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #283136;
+  }
+  .catalog-list {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -379,242 +369,189 @@ p.discount {
   flex-wrap: wrap;
   justify-content: space-between;
   margin-bottom: 40px;
-} 
- 
-.catalog {
+  } 
+  .catalog {
   width: 760px ;
-} 
-
-.catalog-item {
+  } 
+  .catalog-item {
   width:360px;
   margin-bottom: 30px;
-}
-.pagination {
+  }
+  .pagination {
   padding: 0;
   margin: 0;
   list-style: none;
-}
-.pagination-wrapper {
+  }
+  .pagination-wrapper {
   margin-bottom: 60px;
-}
-/*Сетка блока сортировки */
-.filters {
-  width: 261px;
-} 
-.sort-wrapper {
-  padding: 0;
-  margin: 0;
-  margin-bottom: 57px;
-}
-/* Сетка блока Напишите нам*/
-.write-us-heading {
-  margin: 0;
-  padding: 0;
-  min-height: 33px;
-  margin-bottom: 49px;
-}
-.write-us {
+  }
+  
+  /*Блок напишите нам */
+  .write-us {
   width: 960px;
   min-height: 590px;
-}
-.write-us-container {
+  }
+  .write-us-container {
   margin: 0 auto;
-  width:769px;
-}
-.write-us-form {
+  width:769px;  
+  }
+  .write-us-form {
   display: flex;
   width:760px;
   flex-direction: column;
   justify-content: space-between;
   flex-wrap: nowrap;
-  min-height: 330px;
-}
-.write-us p {
+  min-height: 330px;  
+  }
+  .write-us p {
   position: relative;
-}
-.user-data {
+  }
+  .user-data {
   display: flex;
   justify-content: space-around;
   padding: 0;
   margin: 0;
   margin-bottom: 36px;
-}
-.user-data p:last-of-type {
+  }
+  .user-data p:last-of-type {
   margin-left:40px;
-}
-.write-us-form label{
+  }
+  .write-us-form label{
   position: absolute;
   top: -25px;
-}
-.write-us-form textarea {
+  }
+  .write-us-form textarea {
   width: 760px;
   height: 115px;
   resize: none;
   padding-top:10px;
   padding-left: 14px;
-}
-/* Фоны и изображения*/
-.advantages::before {
-  content: url(../img/nerds-illustration.jpg);
-}
-.products-list li:first-of-type::before {
-  content: url(../img/illustration-1.png);
-}
-.products-list li:nth-of-type(2)::before {
-  content: url(../img/illustration-2.png);
-}
-.products-list li:last-of-type::before {
-  content: url(../img/illustration-3.png);
-}
-.social-media a {
-  display: block;
-  width: 79px;
-  height:79px;
-  background-color: #e1e1e1;
-  border-radius: 50%;
-  outline: none;
-
-}
-.icon {
-  background-position: center;
-  background-repeat: no-repeat;
-}
-.vk-icon {
-  background-image: url(../img/vk-icon.svg);
-}
-.fb-icon {
-  background-image: url(../img/fb-icon.svg);
-}
-.inst-icon {
-  background-image: url(../img/insta-icon.svg);
-}
-
-.background-color-wrapper{
-  background-color:  #f2f2f2;
-  min-height: 355px;
-}
-
-
-/*Стилизация форм */
-.write-us input[type="text"],
-.write-us input[type="email"] {
+  }
+  .write-us label {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 18px;
+  color: #000000;
+  }
+  .write-us h2 {
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 45px;
+  
+  margin: 0;
+  padding: 0;
+  min-height: 33px;
+  margin-bottom: 49px;
+  }  
+  .write-us input,
+  .write-us textarea {
+  font-size: 16px;
+  font-weight: normal;
+  }
+  ::-webkit-input-placeholder,
+  ::-moz-placeholder,
+  :-moz-placeholder,
+  :-ms-input-placeholder {
+  color: rgba(68, 68, 68, 0.5);
+  }
+  .write-us input[type="text"],
+  .write-us input[type="email"] {
   width: 360px;
   height: 50px;
   padding-top:18px;
   padding-bottom: 19px;
   padding-left: 14px;
-}
-.write-us input,
-.write-us textarea {
+  }
+  .write-us input,
+  .write-us textarea {
   border: solid 2px #d7dcde;
-}
-/* Cтилизация элементов при наведении по стайлгайду */
-.nerds-logo:hover {
-  opacity: 0.8;
-}
-.nerds-logo:active {
-  opacity:0.3;
-}
-.nav-menu li:active {
-  color: #000;
-  opacity: 0.3;
-}
-.active-line {
-  border-bottom: 2px solid #fb565a;
-  cursor: pointer;
-}
-.basket:hover {
-  color: #fb565a;
-}
-.basket:active {
-  opacity: 0.3;
-}
-/*Кнопки */
-.button {
-  color: #FFFFFF;
-  border: none;
-  background-color: #fb565a;
-  display: block;
-  width: 240px;
-  height: 50px;
-  text-transform: uppercase;
-  font-weight: 500;
-  border-radius: 2%;
-  padding-top: 17px;
-  padding-right: 55px;
-  padding-bottom: 20px;
-  padding-left: 53px;
-  text-align: center;
-}
-.button-order{
-  width: 160px;
-  padding-top: 15px;
-  padding-left: 39px;
-  padding-bottom: 18px;
-  padding-right: 39px;
-}
-.button-write-us {
-  padding-top: 17px;
-  padding-right: 47px;
-  padding-bottom: 23px;
-  padding-left: 36px;
-  width:220px;
-}
-.button-send {
-  width:260px;
-}
-.button:hover {
-  background-color: #e74246;
-}
-.button:active {
-  box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
-  background-color: #d7373b;
-}
-/*Партнеры*/
-.partners-list a {
-  outline: none;
-  opacity: 0.3;
-}
-.partners-list a:focus{
-  opacity: 1;
-}
-.partners-list a:hover {
-  opacity: 1;
-}
-.partners-list a:active {
-  opacity: 0.1;
-}
-/* Иконки соц сетей*/
-.social-media a:hover {
- background-color: #e74246;
-}
-.social-media a:focus {
-  background-color: #e74246;
-}
-.social-media a:active {
-  box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
-  background-color: #d7373b; 
-  
-}
-.grid-sort {
-  list-style: none;
-}
-.grid-sort label {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 19px;
-  color: #283136;
-}
-.features-sort {
-  list-style: none;
-}
-.features-sort label {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 19px;
-  color: #283136;
-}
+  }
+
+
+  /* Cтилизация элементов при наведении по стайлгайду */
+  .nerds-logo:hover {
+    opacity: 0.8;
+    }
+    .nerds-logo:active {
+    opacity:0.3;
+    }
+    .nav-menu li:active {
+    color: #000;
+    opacity: 0.3;
+    }
+    .active-line {
+    border-bottom: 2px solid #fb565a;
+    cursor: pointer;
+    }
+    .basket:hover {
+    color: #fb565a;
+    }
+    .basket:active {
+    opacity: 0.3;
+    }
+  /*Кнопки */
+    .button {
+    color: #FFFFFF;
+    border: none;
+    background-color: #fb565a;
+    display: block;
+    width: 240px;
+    height: 50px;
+    text-transform: uppercase;
+    font-weight: 500;
+    border-radius: 2%;
+    padding-top: 17px;
+    padding-right: 55px;
+    padding-bottom: 20px;
+    padding-left: 53px;
+    text-align: center;
+    }
+    .button-order{
+    width: 160px;
+    padding-top: 15px;
+    padding-left: 39px;
+    padding-bottom: 18px;
+    padding-right: 39px;
+    }
+    .button-write-us {
+    padding-top: 17px;
+    padding-right: 47px;
+    padding-bottom: 23px;
+    padding-left: 36px;
+    width:220px;
+    }
+    .button-send {
+    width:260px;
+    }
+    .button:hover {
+    background-color: #e74246;
+    }
+    .button:active {
+    box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
+    background-color: #d7373b;
+    }
+  /*Партнеры*/
+    .partners-list a {
+    outline: none;
+    opacity: 0.3;
+    }
+    .partners-list a:focus{
+    opacity: 1;
+    }
+    .partners-list a:hover {
+    opacity: 1;
+    }
+    .partners-list a:active {
+    opacity: 0.1;
+    }
+  /* Иконки соц сетей*/
+    .social-media a:hover {
+   background-color: #e74246;
+    }
+    .social-media a:focus {
+    background-color: #e74246;
+    }
+    .social-media a:active {
+    box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
+    background-color: #d7373b; 
+    }
