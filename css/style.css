@@ -41,6 +41,7 @@
   .main-header {
   min-height: 67px;
   border-top: 1px solid transparent;
+  background-color: #eeeeee;
   }
   .main-navigation {
   min-height: 67px;
@@ -57,6 +58,10 @@
   margin: 0;
   padding: 0;
   width:438px;
+
+  margin-left: 202px;
+  display: flex;
+  justify-content: space-between;
   }
   .user-navigation {
   list-style: none;
@@ -64,6 +69,7 @@
   padding: 0;
   width:180px;
   min-height: 50px;
+  margin-left: 286px;
   }
   .header-wrapper {
   margin-top: 49px;
@@ -89,6 +95,11 @@
   }
   .features {
     margin-bottom: 80px;
+    background-color: #eeeeee;
+  }
+  .slider-img{
+    padding-left: -50px;
+    
   }
   .slide-description {
   min-height: 266px;
@@ -99,8 +110,12 @@
   .slide {
   display: flex;
   min-height: 266px;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+  }
+  .slide-2,
+  .slide-3 {
+    display: none;
   }
   .slide-heading {
   font-size: 55px;
@@ -270,7 +285,9 @@
   align-items: center;
   margin:0;
   margin-bottom: 126px;
-
+  }
+  .contact-us {
+    margin-bottom: 69px;
   }
   .contacts p {
   font-weight: bold;
@@ -306,6 +323,10 @@
   padding: 0;
   list-style: none;
   }
+  .social-media li {
+    display: inline-block;
+    margin-left:11px;
+  }
   .social-media a {
   display: block;
   width: 79px;
@@ -336,6 +357,13 @@
   .main-footer {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  }
+  .main-footer p {
+    margin-left: 139px;
+  }
+  .write-us {
+    display: none;
   }
 /*Каталог*/
   .shop-title {   
@@ -533,88 +561,88 @@
 
   /* Cтилизация элементов при наведении по стайлгайду */
   .nerds-logo:hover {
-    opacity: 0.8;
-    }
-    .nerds-logo:active {
-    opacity:0.3;
-    }
-    .nav-menu li:active {
-    color: #000;
-    opacity: 0.3;
-    }
-    .active-line {
-    border-bottom: 2px solid #fb565a;
-    cursor: pointer;
-    }
-    .basket:hover {
-    color: #fb565a;
-    }
-    .basket:active {
-    opacity: 0.3;
-    }
+  opacity: 0.8;
+  }
+  .nerds-logo:active {
+  opacity:0.3;
+  }
+  .nav-menu li:active {
+  color: #000;
+  opacity: 0.3;
+  }
+  .active-line {
+  border-bottom: 2px solid #fb565a;
+  cursor: pointer;
+  }
+  .basket:hover {
+  color: #fb565a;
+  }
+  .basket:active {
+  opacity: 0.3;
+  }
   /*Кнопки */
-    .button {
-    color: #FFFFFF;
-    border: none;
-    background-color: #fb565a;
-    display: block;
-    width: 240px;
-    height: 50px;
-    text-transform: uppercase;
-    font-weight: 500;
-    border-radius: 2%;
-    padding-top: 17px;
-    padding-right: 55px;
-    padding-bottom: 20px;
-    padding-left: 53px;
-    text-align: center;
-    }
-    .button-order{
-    width: 160px;
-    padding-top: 15px;
-    padding-left: 39px;
-    padding-bottom: 18px;
-    padding-right: 39px;
-    }
-    .button-write-us {
-    padding-top: 17px;
-    padding-right: 47px;
-    padding-bottom: 23px;
-    padding-left: 36px;
-    width:220px;
-    }
-    .button-send {
-    width:260px;
-    }
-    .button:hover {
-    background-color: #e74246;
-    }
-    .button:active {
-    box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
-    background-color: #d7373b;
-    }
+  .button {
+  color: #FFFFFF;
+  border: none;
+  background-color: #fb565a;
+  display: block;
+  width: 240px;
+  height: 50px;
+  text-transform: uppercase;
+  font-weight: 500;
+  border-radius: 2%;
+  padding-top: 17px;
+  padding-right: 55px;
+  padding-bottom: 20px;
+  padding-left: 53px;
+  text-align: center;
+  }
+  .button-order{
+  width: 160px;
+  padding-top: 15px;
+  padding-left: 39px;
+  padding-bottom: 18px;
+  padding-right: 39px;
+  }
+  .button-write-us {
+  padding-top: 17px;
+  padding-right: 47px;
+  padding-bottom: 23px;
+  padding-left: 36px;
+  width:220px;
+  }
+  .button-send {
+  width:260px;
+  }
+  .button:hover {
+  background-color: #e74246;
+  }
+  .button:active {
+  box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
+  background-color: #d7373b;
+  }
   /*Партнеры*/
-    .partners-list a {
-    outline: none;
-    opacity: 0.3;
-    }
-    .partners-list a:focus{
-    opacity: 1;
-    }
-    .partners-list a:hover {
-    opacity: 1;
-    }
-    .partners-list a:active {
-    opacity: 0.1;
-    }
+  .partners-list a {
+  outline: none;
+  opacity: 0.3;
+  }
+  .partners-list a:focus{
+  opacity: 1;
+  }
+  .partners-list a:hover {
+  opacity: 1;
+  }
+  .partners-list a:active {
+  opacity: 0.1;
+  }
   /* Иконки соц сетей*/
-    .social-media a:hover {
-   background-color: #e74246;
-    }
-    .social-media a:focus {
-    background-color: #e74246;
-    }
-    .social-media a:active {
-    box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
-    background-color: #d7373b; 
-    }
+  .social-media a:hover {
+  background-color: #e74246;
+  }
+  .social-media a:focus {
+  background-color: #e74246;
+  }
+  .social-media a:active {
+  box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
+  background-color: #d7373b; 
+  }
