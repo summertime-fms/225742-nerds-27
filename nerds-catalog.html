@@ -10,44 +10,37 @@
   <body>
     <header class="main-header">
 		<div class="header-wrapper container">
-    	<nav class="nav-menu main-navigation">
-			 <a class="main-header-logo" href="index.html"><img src="img/nerds-logo1.svg" alt="Дизайн-студия Nёrds" width="160" height="65" class="nerds-logo"></a>
-			 <div class="main-navigation-wrapper">
-   			 <ul class="site-navigation"> 
-   			 	<li><a href="">Студия</a></li>
-   			 	<li><a href="">Клиенты</a></li>
-   			 	<li><a class="active-line">Магазин</a></li>
-   			 	<li><a href="">Контакты</a></li>
-   			 </ul>
-   			 <ul class="user-navigation">
-   			 	<li> 
-   			 		<a href="" class="basket">Корзина</a>
-   			 	</li>
+    		<nav class="nav-menu main-navigation">
+				<a class="main-header-logo" href="index.html">
+					<img src="img/nerds-logo1.svg" alt="Дизайн-студия Nёrds" width="160" height="65" class="nerds-logo">
+				</a>
+			<div class="main-navigation-wrapper">
+   				<ul class="site-navigation"> 
+   			 		<li>
+							<a href="">Студия</a>
+					</li>
+   			 		<li>
+							<a href="">Клиенты</a>
+					</li>
+   			 		<li>
+							<a class="active-line">Магазин</a>
+					</li>
+   			 		<li>
+							<a href="">Контакты</a>
+					</li>
+   			    </ul>
+   			    <ul class="user-navigation">
+   					<li> 
+   			 			<a href="" class="basket">Корзина</a>
+   			 		</li>
 				</ul>	
-			 </div>
-		</nav>
+			</div>
+		    </nav>
 		</div>
     </header>
-    <main class="container"> 
+    <main> 
 		<h1 class="shop-title">Магазин готовых шаблонов</h1>
-		</div>
-	<!--	<p class="heading">Сортировать:</p> -->
-		<div class="sort-wrapper">
-    		<ul  class="sort">
-    			<li><a href="">По цене</a></li> 
-    			<li><a href="">По типу</a></li> 
-    			<li><a href="">По названию</a></li>
-			</ul>
-			<ul>
-				<li>
-					<a href=""><span class="visually-hidden">Сначала</span></a>
-				</li>
-				<li>
-					<a href=""><span class="visually-hidden">С конца</span></a>
-				</li>
-			</ul>
-		</div>
-		<div class="catalog-columns">
+		<section class="catalog-columns container">
     	<section class="filters"> 
 			<h2 class="visually-hidden">Фильтр проектов</h2>
 			<form method="post" action="">
@@ -70,8 +63,6 @@
 				<li>
 					<input id="flexible-grid"type="radio" name="grid-type" value="flex">
 					<label for="flexible-grid">Резиновая</label>
-
-				
 				</li>
 				</ul>
 				</fieldset>
@@ -102,11 +93,32 @@
 				</ul>
 				<button type="submit" class="catalog-button">Показать</button>
 				</fieldset>
-
 			</form>
     	</section>
     	<section class="catalog"> 
-    		<h2 class="visually-hidden">Список проектов</h2>
+			<h2 class="visually-hidden">Список проектов</h2>
+			<div class="sort-wrapper">  <!--Уместно ли блок с сортировкой сделать section?--> 
+				<p class="heading">Сортировать:</p>
+    			<ul class="sort">
+    				<li><a href="">По цене</a></li> 
+    				<li><a href="">По типу</a></li> 
+    				<li><a href="">По названию</a></li>
+				</ul>
+				<ul class="switcher">
+					<li>
+						<a href="">
+							<span class="visually-hidden">Сначала</span>
+							&#9660
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<span class="visually-hidden">С конца</span>
+							&#9650
+						</a>
+					</li>
+				</ul>
+		</div>
     		<ul class="catalog-list"> 
     			<li class="catalog-item">
     				<a href=""><h3 class="heading">Sedona</h3></a>
@@ -139,23 +151,25 @@
 				<li><a href="" class="catalog-button">2</a></li>
 				<li><a href="" class="catalog-button">3</a></li> 
 			</ul>
-			<a href="" class="catalog-button">Следующая</a>
+			<a href="" class="catalog-button next-page">Следующая</a>
 			</div>
-		</div>
-	    
-    	<section> 
+		</section>
+		</section>
+		
+    	<section class="contact-us"> 
 			<h2 class="visually-hidden">Контакты:</h2>
 			<img src="img/map.png" width="1440" height="416" alt="Санкт-Петербург, ул. Большая Конюшенная, д.19/8">
     		<div class="contacts">
     		<p>NЁRDS DESIGN STUDIO</p>
     		<address>
     			191186, Санкт-Петербург,
-    		ул. Б.Конюшенная, д. 19/8 <br>
-    		тел. <a class="phone-number" href="tel:+78122757575"> +7(812)275-75-75</a>
+    		ул. Б.Конюшенная, д. 19/8
+    		<a class="phone-number" href="tel:+78122757575"> +7(812)275-75-75</a>
 			</address>
 			<a href="" class="button button-write-us">Напишите нам</a> <!--Здесь точно ссылка? отдельную страницу же не открывает,а просто снимает класс visually-hidden у блока Напишите нам-->
 			</div>
-    	</section>
+		</section>
+		
     </main>
     <footer class="container main-footer">  
 		<ul class="social-media"> 
