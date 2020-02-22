@@ -40,176 +40,213 @@
     </header>
     <main> 
 		<h1 class="shop-title">Магазин готовых шаблонов</h1>
-		<section class="catalog-columns container">
-    	<section class="filters"> 
-			<h2 class="visually-hidden">Фильтр проектов</h2>
-			<form method="post" action="">
-				<div class="price-sort">
-					<p class="heading"> Стоимость:</p>
+		<div class="catalog-columns container">
+    		<section class="filters"> 
+				<h2 class="visually-hidden">Фильтр проектов</h2>
+				<form method="post" action="">
+					<div class="price-sort">
+						<p class="heading">
+							Стоимость:
+						</p>
 					<span></span> <!--  ползунок стоимости -->
+					</div>
+					<fieldset class="fieldset-border">   
+						<legend class="heading">
+							Сетка:
+						</legend>
+						<ul class="grid-sort">
+							<li>  
+								<input  id="adapted-grid" type="radio" name="grid-type" value="adapted" checked>
+								<label for="adapted-grid">Адаптивная</label>
+							</li>
+							<li>		
+								<input id="fixed-grid"type="radio" name="grid-type" value="fixed">
+								<label for="fixed-grid">Фиксированная</label>
+							</li>
+							<li>
+								<input id="flexible-grid"type="radio" name="grid-type" value="flex">
+								<label for="flexible-grid">Резиновая</label>
+							</li>
+						</ul>
+					</fieldset>
+					<fieldset class="fieldset-border">
+						<legend class="heading">Особенности:</legend>
+						<ul class="features-sort">
+							<li>
+								<input type="checkbox" name="slider" id="slider-checkbox" checked> 
+								<label for="slider-checkbox">Слайдер</label>
+							</li>
+							<li> 
+								<input type="checkbox" name="advantages-block" id="advantages-checkbox">
+								<label for="advantages-checkbox">Блок преимуществ</label>
+							</li>
+							<li>		
+								<input type="checkbox" name="news" id="news-checkbox" checked>
+								<label for="news-checkbox">Новости</label>
+							</li>
+							<li>
+								<input type="checkbox" name="gallery" id="galery-checkbox">
+								<label for="gallery-checkbox">Галерея</label>
+							</li>
+							<li>
+								<input type="checkbox" name="basket" id="basket-checkbox">
+								<label for="basket-checkbox">Корзина</label> 			
+							</li>
+						</ul>
+					</fieldset>
+					<button type="submit" class="catalog-button">Показать</button>
+				</form>
+    		</section>
+    		<section class="catalog"> 
+				<h2 class="visually-hidden">Список проектов</h2>
+				<div class="sort-wrapper">  <!--Уместно ли блок с сортировкой сделать section?--> 
+					<p class="heading">Сортировать:</p>
+    				<ul class="sort">
+    					<li>
+							<a href="">По цене</a>
+						</li> 
+    					<li>
+							<a href="">По типу</a>
+						</li> 
+    					<li>
+							<a href="">По названию</a>
+						</li>
+					</ul>
+					<ul class="switcher">
+						<li>
+							<a href="">
+								<span class="visually-hidden">Сначала</span>
+								&#9660
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<span class="visually-hidden">С конца</span>
+								&#9650
+							</a>
+						</li>
+					</ul>
 				</div>
-			<fieldset class="fieldset-border">   
-				<legend class="heading">Сетка:</legend>
-				<ul class="grid-sort">
-					<li>  
-					<input  id="adapted-grid" type="radio" name="grid-type" value="adapted" checked>
-					<label for="adapted-grid">Адаптивная</label>
-				</li>
-				<li>
-				
-					<input id="fixed-grid"type="radio" name="grid-type" value="fixed">
-					<label for="fixed-grid">Фиксированная</label>
-				</li>
-				<li>
-					<input id="flexible-grid"type="radio" name="grid-type" value="flex">
-					<label for="flexible-grid">Резиновая</label>
-				</li>
-				</ul>
-				</fieldset>
-				<fieldset class="fieldset-border">
-				<legend class="heading">Особенности:</legend>
-				<ul class="features-sort">
-					<li>
-				<input type="checkbox" name="slider" id="slider-checkbox" checked> 
-				<label for="slider-checkbox">Слайдер</label>
-			</li>
-			<li> 
-				   <input type="checkbox" name="advantages-block" id="advantages-checkbox">
-				   <label for="advantages-checkbox">Блок преимуществ</label>
-				</li>
-				<li>		
-					<input type="checkbox" name="news" id="news-checkbox" checked>
-					<label for="news-checkbox">Новости</label>
-				</li>
-				<li>
-					 <input type="checkbox" name="gallery" id="galery-checkbox">
-					 <label for="gallery-checkbox">Галерея</label>
-				</li>
-				<li>
-					<input type="checkbox" name="basket" id="basket-checkbox">
-					<label for="basket-checkbox">Корзина</label> 
-					
-					</li>
-				</ul>
-				<button type="submit" class="catalog-button">Показать</button>
-				</fieldset>
-			</form>
-    	</section>
-    	<section class="catalog"> 
-			<h2 class="visually-hidden">Список проектов</h2>
-			<div class="sort-wrapper">  <!--Уместно ли блок с сортировкой сделать section?--> 
-				<p class="heading">Сортировать:</p>
-    			<ul class="sort">
-    				<li><a href="">По цене</a></li> 
-    				<li><a href="">По типу</a></li> 
-    				<li><a href="">По названию</a></li>
-				</ul>
-				<ul class="switcher">
-					<li>
-						<a href="">
-							<span class="visually-hidden">Сначала</span>
-							&#9660
+    			<ul class="catalog-list"> 
+    				<li class="catalog-item">
+    					<a href="">
+							<h3 class="heading">Sedona</h3>
 						</a>
-					</li>
-					<li>
-						<a href="">
-							<span class="visually-hidden">С конца</span>
-							&#9650
+    					<img src="img/img-sedona.jpg" width="360" height="576" alt="Sedona">
+    				</li>
+    				<li class="catalog-item">
+    					<a href="">
+							<h3 class="heading">Pink</h3>
 						</a>
-					</li>
-				</ul>
-		</div>
-    		<ul class="catalog-list"> 
-    			<li class="catalog-item">
-    				<a href=""><h3 class="heading">Sedona</h3></a>
-    				<img src="img/img-sedona.jpg" width="360" height="576" alt="Sedona">
-    			</li>
-    			<li class="catalog-item">
-    				<a href=""><h3 class="heading">Pink</h3></a>
-    			   <img src="img/img-pink.jpg" width="360" height="576" alt="Pink"> 
-    			</li>
-    			<li class="catalog-item">
-    				<a href=""><h3 class="heading">Barbershop Borodinsky</h3></a>
-    				<img src="img/img-barbershop.jpg" width="360" height="576" alt="Borodinsky" >
-    			</li>
-    			<li class="catalog-item">
-    				<a href=""><h3 class="heading">Mishka</h3></a>
+    			  	 <img src="img/img-pink.jpg" width="360" height="576" alt="Pink"> 
+    				</li>
+    				<li class="catalog-item">
+    					<a href="">
+							<h3 class="heading">Barbershop Borodinsky</h3>
+						</a>
+    					<img src="img/img-barbershop.jpg" width="360" height="576" alt="Borodinsky" >
+    				</li>
+    				<li class="catalog-item">
+    					<a href="">
+							<h3 class="heading">Mishka</h3>
+						</a>
     				<img src="img/img-mishka.jpg" width="360" height="576" alt="Mishka"> 
-    			</li>
-    			<li class="catalog-item">
-    				<a href=""><h3 class="heading">A-plus</h3></a>
-    				<img src="img/img-aplus.jpg" width="360" height="576" alt="A-plus"> 
-    			</li>
-    			<li class="catalog-item">
-    				<a href=""><h3 class="heading">Kvast</h3></a>
-    				<img src="img/img-kvast.jpg" width="360" height="576" alt="Kvast"> 
-				</li>
-				
-			</ul>
-			<div class="pagination-wrapper">
-			<ul class="pagination"> 
-				<li><a class="catalog-button">1</a></li>
-				<li><a href="" class="catalog-button">2</a></li>
-				<li><a href="" class="catalog-button">3</a></li> 
-			</ul>
-			<a href="" class="catalog-button next-page">Следующая</a>
-			</div>
-		</section>
-		</section>
-		
-    	<section class="contact-us"> 
-			<h2 class="visually-hidden">Контакты:</h2>
-			<img src="img/map.png" width="1440" height="416" alt="Санкт-Петербург, ул. Большая Конюшенная, д.19/8">
-    		<div class="contacts">
+    				</li>
+    				<li class="catalog-item">
+    					<a href="">
+							<h3 class="heading">A-plus</h3>
+						</a>
+    					<img src="img/img-aplus.jpg" width="360" height="576" alt="A-plus"> 
+    				</li>
+    				<li class="catalog-item">
+    					<a href="">
+							<h3 class="heading">Kvast</h3>
+						</a>
+    					<img src="img/img-kvast.jpg" width="360" height="576" alt="Kvast"> 
+					</li>
+				</ul>
+				<div class="pagination-wrapper">
+					<ul class="pagination"> 
+						<li>
+							<a class="catalog-button">1</a>
+						</li>
+						<li>
+							<a href="" class="catalog-button">2</a>
+						</li>
+						<li>
+							<a href="" class="catalog-button">3</a>
+						</li> 
+					</ul>
+				<a href="" class="catalog-button next-page">Следующая</a>
+				</div>
+			</section>
+		</div>
+    <section class="contact-us"> 
+		<h2 class="visually-hidden">Контакты:</h2>
+		<img src="img/map.png" width="1440" height="416" alt="Санкт-Петербург, ул. Большая Конюшенная, д.19/8">
+    	<div class="contacts">
     		<p>NЁRDS DESIGN STUDIO</p>
     		<address>
-    			191186, Санкт-Петербург,
+    		191186, Санкт-Петербург,
     		ул. Б.Конюшенная, д. 19/8
     		<a class="phone-number" href="tel:+78122757575"> +7(812)275-75-75</a>
 			</address>
-			<a href="" class="button button-write-us">Напишите нам</a> <!--Здесь точно ссылка? отдельную страницу же не открывает,а просто снимает класс visually-hidden у блока Напишите нам-->
-			</div>
-		</section>
-		
+			<a href="" class="button button-write-us">Напишите нам</a> 
+		</div>
+	</section>
     </main>
     <footer class="container main-footer">  
 		<ul class="social-media"> 
-		  <li><a href=""  class="vk-icon icon"><span class="visually-hidden" >Вконтакте</span></a></li>
-			<li><a href="" class="fb-icon icon"><span class="visually-hidden">Фейсбук</span></a></li>
-			<li><a href="" class="inst-icon icon"><span class="visually-hidden">Инстаграм</span></a></li>
+		  <li>
+			  <a href=""  class="vk-icon icon">
+				  <span class="visually-hidden" >Вконтакте</span>
+				</a>
+			</li>
+			<li>
+				<a href="" class="fb-icon icon">
+					<span class="visually-hidden">Фейсбук</span>
+				</a>
+			</li>
+			<li>
+				<a href="" class="inst-icon icon">
+					<span class="visually-hidden">Инстаграм</span>
+				</a>
+			</li>
 		</ul>
-	<p>Давайте дружить, это выгодно!<br> 
-	<span>Скидка 10% для друзей из социальных сетей.</span>
-	</p>
-
-</footer>
-<section>
-	<div class="write-us">
-		<div class="write-us-container">
-		<h2 class="write-us-heading">Напишите нам</h2>
-		<form method="post" action="" class="write-us-form">
-			<div class="user-data">
-			<p>
-				<label for="name=field">
-					Ваше имя:
-				</label>
-				<input type="text" name="name" id="name=field" placeholder="Имя Фамилия">
-				
-			</p>
-			<p>
-				<label for="email-field">Ваш e-mail:</label> 
-				<input type="email" name="email" id="email-field" placeholder="email@example.com"> 
-			</p>
-		</div>
-			<p>
-				<label for="letter-field">Текст письма:</label> 
-				<textarea id="letter-field" placeholder="В свободной форме"></textarea> 
-			</p>
-			<p>
-				<button type="submit" class="button button-send">Отправить </button> 
-			</p>
-		</form>
-		</div>
+		<p>Давайте дружить, это выгодно!<br> 
+			<span>Скидка 10% для друзей из социальных сетей.</span>
+		</p>
+	</footer>
+	<section>
+		<div class="write-us">
+			<div class="write-us-container">
+				<h2 class="write-us-heading">Напишите нам</h2>
+				<form method="post" action="" class="write-us-form">
+					<div class="user-data">
+						<p>
+							<label for="name=field">
+								Ваше имя:
+							</label>
+							<input type="text" name="name" id="name=field" placeholder="Имя Фамилия">
+			 			</p>
+						<p>
+							<label for="email-field">
+								Ваш e-mail:
+							</label> 
+							<input type="email" name="email" id="email-field" placeholder="email@example.com"> 
+						</p>
+					</div>
+					<p>
+						<label for="letter-field">
+							Текст письма:
+						</label> 
+						<textarea id="letter-field" placeholder="В свободной форме"></textarea> 
+					</p>
+					<p>
+						<button type="submit" class="button button-send">Отправить </button> 
+					</p>
+				</form>
+			</div>
 		</div>
 	</section>
 </body> 
