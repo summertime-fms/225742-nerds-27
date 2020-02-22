@@ -43,6 +43,23 @@
   border: 0 none;
   }
 
+  .button {
+  font-size: 16px; 
+  line-height: 18px; 
+  text-align: center; 
+  vertical-align: middle;
+  color: #FFFFFF;
+  border: none;
+  background-color: #fb565a;
+  text-transform: uppercase;
+  font-weight: 500;
+  border-radius: 2%;
+  display: inline-block;
+  width: 240px;
+  padding: 18px 30px;
+  text-align: center;
+  }
+
   /* Главная*/
 
   .main-header {
@@ -604,7 +621,6 @@
   }
 
   .grid-sort label {
-  font-family: Roboto;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -697,14 +713,75 @@
 
   .catalog-item {
   width:360px;
+  height:616px;
   margin-bottom: 30px;
+  position: relative;
+  
+  }
+
+  .catalog-item::before {
+  content: "";
+  display: block;
+  background-image: url(../img/browser.svg);
+  height:40px;
+  width:360px;
+  opacity: 0.12;
+  }
+
+  .shape {
+  width:360px;
+  height: 576px;
+  background-image: url(../img/img-sedona.jpg);
+  background-repeat: no-repeat;
+  display: inline-block
+  }
+
+  .details {
+  margin-top:345px;
+  position: relative;
+  min-height:231px;
+  background-color: #eee;
+  width:360px;
+  display: none;
+  }
+  
+  .sedona:hover .details{
+  display: block;
+  }
+
+  .details h3 {
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  padding-top: 35px;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  }
+
+  .details p {
+  text-align: center;
+  font-weight: 500;
+  font-size: 16px;
+  color:#666;
+  margin:25px auto;
+  line-height: 1.12;
+  width:250px;
+  margin-bottom:30px;
+  }
+
+  .button-buy {
+  margin: 0 auto;
+  min-height: 50px;
+  width:200px;
+  display: block;
+  text-transform: uppercase;
   }
 
   .pagination-wrapper {
-   margin-bottom: 60px;
-   display: flex;
-   justify-content: flex-start;
-   width: 545px;
+  margin-bottom: 60px;
+  display: flex;
+  justify-content: flex-start;
+  width: 545px;
   }
 
   .pagination {
@@ -827,23 +904,6 @@
   }
   
   /*Кнопки */
-
-  .button {
-  font-size: 16px; 
-  line-height: 18px; 
-  text-align: center; 
-  vertical-align: middle;
-  color: #FFFFFF;
-  border: none;
-  background-color: #fb565a;
-  text-transform: uppercase;
-  font-weight: 500;
-  border-radius: 2%;
-  display: inline-block;
-  width: 240px;
-  padding: 18px 30px;
-  text-align: center;
-  }
 
   .button-order{
   width: 160px;
