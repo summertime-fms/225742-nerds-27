@@ -55,7 +55,7 @@
   font-weight: 500;
   border-radius: 2%;
   display: inline-block;
-  width: 240px;
+  min-width: 240px;
   padding: 18px 30px;
   text-align: center;
   }
@@ -198,15 +198,14 @@
 
   .slide-description {
   min-height: 266px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
   }
   
   .slide-heading {
   font-size: 55px;
   line-height: 55px;
   font-weight: 500;
+  margin-bottom: 28px;
+  display: block;
   }
 
   .slide p {
@@ -214,6 +213,7 @@
   line-height: 24px;
   font-weight: 400;
   color: #283136;
+  margin-bottom: 42px;
   }
 
   .slide a {
@@ -253,7 +253,7 @@
   }
 
   .products-list li:first-of-type::before {
-  content: "";
+  content:"";
   background-image: url(../img/illustration-1.png);
   margin-bottom: 26px;
   display: block;
@@ -452,10 +452,8 @@
   left:140px;
   bottom:54px; 
   width:319px;
-  height:308px;
-  padding-left:54px;
-  display: flex;
-  flex-direction: column;
+  min-height:308px;
+  padding-left: 50px;
   }
 
   .contacts p {
@@ -466,6 +464,7 @@
   color: #000000;
   margin-top:54px;
   margin-bottom:32px;
+  display: inline-block;
   }
 
   .contacts address {
@@ -473,8 +472,9 @@
   font-size: 16px;
   line-height: 18px;
   color: #666666; 
-  width: 200px;
+  text-align: left;
   margin-bottom: 37px;
+  display: inline-block;
   }
 
   .phone-number {
@@ -716,11 +716,9 @@
   height:616px;
   margin-bottom: 30px;
   position: relative;
-  
   }
 
-  .catalog-item::before {
-  content: "";
+  .browser-wrap {
   display: block;
   background-image: url(../img/browser.svg);
   height:40px;
@@ -742,11 +740,20 @@
   min-height:231px;
   background-color: #eee;
   width:360px;
+  
   display: none;
   }
   
+  .details-container {
+  width:200px;
+  margin: 0 auto;
+  }
   .sedona:hover .details{
   display: block;
+  }
+
+  .sedona:hover .browser-wrap {
+  opacity: 1;
   }
 
   .details h3 {
@@ -765,16 +772,15 @@
   color:#666;
   margin:25px auto;
   line-height: 1.12;
-  width:250px;
   margin-bottom:30px;
   }
 
   .button-buy {
-  margin: 0 auto;
+  margin-bottom:15px;
   min-height: 50px;
-  width:200px;
-  display: block;
+  min-width:200px;
   text-transform: uppercase;
+  cursor: pointer;
   }
 
   .pagination-wrapper {
@@ -816,19 +822,33 @@
   }
 
   /*Блок напишите нам */
-
-  .write-us {
-  width: 960px;
+  .modal {
+  width:960px;
+  padding: 73px 100px 84px;
   min-height: 590px;
+  position: fixed;
   display: none;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0px 20px 40px 0 rgba(0, 1, 1, 0.75);
+  background-color: #ffffff;
   }
 
-  .write-us-container {
-  margin: 0 auto;
-  width:769px;  
+  .modal-close {
+  width: 21px;
+  height: 21px;
+  
+  border: 0;  
+  cursor: pointer;
+  position: absolute;
+  top:78px;
+  right:90px;
+  background-image: url(../img/close-cross.svg);
+  background-color: #ffffff;
   }
 
-  .write-us h2 {
+  .modal h2 {
   font-weight: 500;
   font-size: 45px;
   line-height: 45px;
@@ -872,8 +892,8 @@
   color: #000000;
   }
 
-  .write-us input[type="text"],
-  .write-us input[type="email"] {
+  .modal input[type="text"],
+  .modal input[type="email"] {
   width: 360px;
   height: 50px;
   padding-top:18px;
@@ -881,8 +901,8 @@
   padding-left: 14px;
   }
  
-  .write-us input,
-  .write-us textarea {
+  .modal input,
+  .modal textarea {
   font-size: 16px;
   font-weight: normal;
   border: solid 2px #d7dcde;
@@ -905,20 +925,21 @@
   
   /*Кнопки */
 
-  .button-order{
-  width: 160px;
+  .products-list a{
+  min-width: 160px;
   padding-top: 15px;
   padding-left: 39px;
   padding-bottom: 18px;
   padding-right: 39px;
+
   }
 
   .button-write-us {
-  padding-top: 17px;
-  padding-right: 47px;
-  padding-bottom: 23px;
+  padding-top: 20px;
+  padding-right: 36px;
+  padding-bottom: 20px;
   padding-left: 36px;
-  width:220px;
+  min-width:220px;
   }
 
   .catalog-button {
