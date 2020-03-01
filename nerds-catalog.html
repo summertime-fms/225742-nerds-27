@@ -9,49 +9,64 @@
   </head>
   <body>
     <header class="main-header">
-		<div class="header-wrapper container">
-    		<nav class="nav-menu main-navigation">
-				<a class="main-header-logo" href="index.html">
-					<img src="img/nerds-logo1.svg" alt="Дизайн-студия Nёrds" width="160" height="65" class="nerds-logo">
+		<div class="container">
+			<nav class="nav-menu main-navigation">
+				<a href="index.html" >			
+					 <img src="img/nerds-logo.svg" class="main-header-logo" alt="Дизайн-студия Nёrds" width="160" height="65" class="nerds-logo">
 				</a>
-			<div class="main-navigation-wrapper">
-   				<ul class="site-navigation"> 
-   			 		<li>
-							<a href="">Студия</a>
+			 
+				 <div class="main-navigation-wrapper">
+					 
+				   <ul class="site-navigation"> 
+						<li>
+						<a href="">Студия</a>
 					</li>
-   			 		<li>
-							<a href="">Клиенты</a>
+						<li>
+						<a href="">Клиенты</a>
 					</li>
-   			 		<li>
-							<a class="active-line">Магазин</a>
+						<li>
+						<a href="nerds-catalog.html">Магазин</a>
 					</li>
-   			 		<li>
-							<a href="">Контакты</a>
+						<li>
+						<a href="">Контакты</a>
 					</li>
-   			    </ul>
-   			    <ul class="user-navigation">
-   					<li> 
-   			 			<a href="" class="basket">Корзина</a>
-   			 		</li>
-				</ul>	
-			</div>
-		    </nav>
+					
+				   </ul>
+					<ul class="user-navigation">
+						<li class="basket"> 
+							<a href="">Корзина</a>
+						</li>
+				</ul>
+				
+			 </div> 
+			</nav>
 		</div>
-    </header>
+	</header>
     <main> 
 		<h1 class="shop-title">Магазин готовых шаблонов</h1>
 		<div class="catalog-columns container">
     		<section class="filters"> 
 				<h2 class="visually-hidden">Фильтр проектов</h2>
-				<form method="post" action="">
-					<div class="price-sort">
-						<p class="heading">
-							Стоимость:
-						</p>
-					<span></span> <!--  ползунок стоимости -->
-					</div>
+				<form method="get" action="">
+					<fieldset class="filter-item fieldset-border">
+						<legend>Стоимость:</legend>
+						<div class="range-filter">
+							<div class="range-controls">
+								<div class="scale">
+									<div class="bar"></div>
+								</div>
+								  <div class="toggle toggle-min"></div>
+   								  <div class="toggle toggle-max"></div>
+							</div>
+							<div class="price-controls">
+								<label class="min-price">от <input name="min-price" type="number" value="0"></label>
+            					<label class="max-price">до <input name="max-price" type="number" value="15000"></label>
+							</div>
+						</div>
+					</fieldset>
+				
 					<fieldset class="fieldset-border">   
-						<legend class="heading">
+						<legend>
 							Сетка:
 						</legend>
 						<ul class="grid-sort">
@@ -70,7 +85,7 @@
 						</ul>
 					</fieldset>
 					<fieldset class="fieldset-border">
-						<legend class="heading">Особенности:</legend>
+						<legend>Особенности:</legend>
 						<ul class="features-sort">
 							<li>
 								<input type="checkbox" name="slider" id="slider-checkbox" checked> 
@@ -128,19 +143,20 @@
 					</ul>
 				</div>
     			<ul class="catalog-list"> 
-    				<li class="catalog-item sedona">
-						<span class="browser-wrap"></span>
-						<div class="shape sedona">
-							<div class="details">
-								<div class="details-container">
+    				<li class="catalog-item sedona">   <!--padding  -->
+						<img src="../" alt="">
+					<!-- <span class="browser-wrap"></span>   через псевдоэлемент-->
+						
+							<div class="catalog-item-details"> <!--Абсолютное позиционирование ширина 100% max-height overflow-y: auto-->
+								
 									<h3>Sedona</h3>
 									<p>
 										Информационный сайт для туристов
 									</p>
 									<a class="button button-buy">9 900 Руб.</a>
-								</div>
+								
 							</div>
-						</div>
+					
 					</li>
 					<li class="catalog-item pink">
 						<span class="browser-wrap"></span>
@@ -270,10 +286,10 @@
 		<form method="post" action="" class="write-us-form">
 			<div class="user-data">
 				<p>
-					<label for="name=field">
+					<label for="name-field">
 					Ваше имя:
 					</label>
-					<input type="text" name="name" id="name=field" placeholder="Имя Фамилия">
+					<input type="text" name="username" id="name-field" placeholder="Имя Фамилия">
 			
 				</p>
 				<p>
@@ -294,4 +310,22 @@
 	</button>
 </section>
 </body> 
+<script>
+	var link = document.querySelector(".button-write-us");
+	var popup = document.querySelector(".modal");
+	var close = document.querySelector(".modal-close");
+	var name = popup.querySelector("[name=username]");
+	link.addEventListener("click", function(evt) {
+		evt.preventDefault();
+		popup.classList.add("modal-show");
+		name.focus
+		
+	});
+	close.addEventListener("click", function(evt) {
+		evt.preventDefault();
+		popup.classList.remove("modal-show");
+
+	});
+
+ </script>
 </html>
