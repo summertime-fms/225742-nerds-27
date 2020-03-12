@@ -4,6 +4,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
+	
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
   </head>
@@ -288,21 +289,7 @@
 		<span class="visually-hidden">Закрыть</span>
 	</button>
 </section>
+<script src="js/script.js"></script>
 </body> 
-<script>
-	var link = document.querySelector(".button-write-us");
-	var popup = document.querySelector(".modal");
-	var close = document.querySelector(".modal-close");
-	var name = popup.querySelector("[name=username]");
-	link.addEventListener("click", function(evt) {
-		evt.preventDefault();
-		popup.classList.add("modal-show");
-	});
-	close.addEventListener("click", function(evt) {
-		evt.preventDefault();
-		popup.classList.remove("modal-show");
 
-	});
-	
- </script>
 </html>

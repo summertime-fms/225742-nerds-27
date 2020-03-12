@@ -2,9 +2,9 @@
 <html lang="ru">
   <head>
 	<meta charset="utf-8">
-	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
+	
     <title>HTML Academy: Нёрдс</title>
   </head>
   <body>
@@ -43,11 +43,19 @@
 			</div>
 		</header>
 		<main> 
-
-		<section class="features">
-			<div class="container">
-    			<h1 class="visually-hidden"> Дизайн-студия Нёрдс</h1>
-    			<div class="slide slide-1"> 
+			<h1 class="visually-hidden"> Дизайн-студия Нёрдс</h1>
+			<section class="slider">
+				<div class="container">
+					<input class="visually-hidden first-toggle" type="radio" id="slide-1" name="toggle" checked>
+   					<input class="visually-hidden second-toggle" type="radio" id="slide-2" name="toggle">
+   					<input class="visually-hidden third-toggle" type="radio" id="slide-3" name="toggle">
+					<div class="slider-toggles">
+						<label class="slider-toggle" for="slide-1">Первый слайд</label>
+						<label class="slider-toggle" for="slide-2">Второй слайд</label>
+						<label class="slider-toggle" for="slide-3">Третий слайд</label>
+					</div>
+					<ul class="slider-list">
+    				<li class="slide slide-1" id="item1"> 
 					<div class="slide-description">
     					<span class="slide-heading">Долго, дорого,<br> скрупулезно.</span> 
     					<p>
@@ -56,8 +64,8 @@
 						<a href="" class="button">Узнать больше</a>
 					</div>
 					<img src="img/slide1.png" class="slider-img" width="698" height="413" alt="Долго, дорого, скрупулезно.">
-				</div>
-				<div class="slide slide-2">
+				</li>
+				<li class="slide slide-2" id="item2">
 					<div class="slide-description">
 						<span class="slide-heading">
 							Любим математику,
@@ -70,8 +78,8 @@
 						<a href="" class="button">Узнать больше</a>
 					</div>
 					<img src="img/slide2.png"  class="slider-img" width="698" height="413" alt="Любим математику, как никто другой!">
-				</div>
-				<div class="slide slide-3">
+				</li>
+				<li class="slide slide-3" id="item3">
 					<div class="slide-description">
 						<span class="slide-heading">
 							Только ночь,<br> только хардкор!
@@ -82,11 +90,12 @@
 						</p>
 						<a href="" class="button">Узнать больше</a>
 					</div>
-					<img src="img/slide3.png" class="slider-img" width="759" height="411" alt="Только ночь, только хардкор!">
+					<img src="img/slide3.png" class="slider-img" width="759" height="413" alt="Только ночь, только хардкор!">
+				</li>
+				</ul>
 				</div>
-			</div>
 		</section>
-    	<section class="container"> 	
+    	<section class="container products"> 	
     		<h2 class="visually-hidden">Наши услуги</h2>
     		<ul class="products-list"> 
     			<li> 
@@ -144,21 +153,24 @@
     	<section class="container"> 
     		<h2 class="visually-hidden">Наши партнеры:</h2>
     		<ul class="partners-list"> 
-    			<li>
+    			<li class="partner-item">
 					<a href="https://htmlacademy.ru/intensive/htmlcss">
 						<img src="img/htmlacdemy-logo.png" alt="html academy. Интерактивные онлайн курсы." width="199" height="68">
 					</a>
 				</li>
-    			<li>
-					<a href=""><img src="img/borodinsli-logo.png" alt="Барбершоп Бородинский" width="209" height="90">
+    			<li class="partner-item">
+					<a href="#">
+						<img src="img/borodinsli-logo.png" alt="Барбершоп Бородинский" width="209" height="90">
+					</a>
+				</li>
+    			<li class="partner-item">
+					<a href="#">
+					<img src="img/pink-logo.png" alt="Пинк. Взгляните на жизнь иначе!" width="185" height="52">
 					</a>
 				</li> 
-    			<li>
-					<a href=""><img src="img/pink-logo.png" alt="Пинк. Взгляните на жизнь иначе!" width="185" height="52">
-					</a>
-				</li> 
-    			<li>
-					<a href=""><img src="img/mishka-logo.png" alt="Мишка. Милые штуки ручной работы для дома." width="173" height="84">
+    			<li class="partner-item">
+					<a href="#">
+					<img src="img/mishka-logo.png" alt="Мишка. Милые штуки ручной работы для дома." width="173" height="84">
 					</a>
 				</li>
     		</ul>
@@ -227,5 +239,6 @@
 			<span class="visually-hidden">Закрыть</span>
 		</button>
 	</section>
+	<script src="js/script.js"></script>
   </body>
 </html>
