@@ -4,19 +4,16 @@
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
-	
     <title>HTML Academy: Нёрдс</title>
   </head>
   <body>
-    	<header class="main-header">
-			<div class="container">
-    			<nav class="nav-menu main-navigation">
-					<a href="" >			
-				     	<img src="img/nerds-logo.svg" class="main-header-logo" alt="Дизайн-студия Nёrds" width="160" height="65" class="nerds-logo">
-					</a>
-			 	
-					 <div class="main-navigation-wrapper">
-						 
+	<header class="main-header">
+		<div class="container">
+    		<nav class="nav-menu main-navigation">
+				<a href="" >			
+				 	<img class="main-header-logo" src="img/nerds-logo.svg" alt="Дизайн-студия Nёrds" width="160" height="65">
+				</a>
+				<div class="main-navigation-wrapper">	 
    					<ul class="site-navigation"> 
    			 			<li>
 							<a href="">Студия</a>
@@ -37,63 +34,57 @@
    			 				<a href="">Корзина</a>
    			 			</li>
 					</ul>
-					
 			 	</div> 
-				</nav>
-			</div>
-		</header>
-		<main> 
-			<h1 class="visually-hidden"> Дизайн-студия Нёрдс</h1>
-			<section class="slider">
-				<div class="container">
-					<input class="visually-hidden first-toggle" type="radio" id="slide-1" name="toggle" checked>
-   					<input class="visually-hidden second-toggle" type="radio" id="slide-2" name="toggle">
-   					<input class="visually-hidden third-toggle" type="radio" id="slide-3" name="toggle">
-					<div class="slider-toggles">
-						<label class="slider-toggle" for="slide-1">Первый слайд</label>
-						<label class="slider-toggle" for="slide-2">Второй слайд</label>
-						<label class="slider-toggle" for="slide-3">Третий слайд</label>
-					</div>
-					<ul class="slider-list">
+			</nav>
+		</div>
+	</header>
+	<main> 
+		<h1 class="visually-hidden"> Дизайн-студия Нёрдс</h1>
+		<section class="slider">
+			<h2 class="visually-hidden">Наши преимущества</h2>
+			<div class="container">
+				<input class= "visually-hidden first-toggle" type="radio" id="slide-1" name="toggle" checked>
+   				<input class= "visually-hidden second-toggle" type="radio" id="slide-2" name="toggle">
+   				<input class= "visually-hidden third-toggle" type="radio" id="slide-3" name="toggle">
+				<div class="slider-toggles">
+					<label class="slider-toggle" for="slide-1">Первый слайд</label>
+					<label class="slider-toggle" for="slide-2">Второй слайд</label>
+					<label class="slider-toggle" for="slide-3">Третий слайд</label>
+				</div>
+				<ul class="slider-list">
     				<li class="slide slide-1" id="item1"> 
-					<div class="slide-description">
-    					<span class="slide-heading">Долго, дорого,<br> скрупулезно.</span> 
-    					<p>
+						<div class="slide-description">
+    						<span class="slide-heading">Долго, дорого,<br> скрупулезно.</span> 
+    						<p>
 							Математически выверенный дизайн<br> для вашего сайта или мобильного приложения 
-						</p>
-						<a href="" class="button">Узнать больше</a>
-					</div>
-					<img src="img/slide1.png" class="slider-img" width="698" height="413" alt="Долго, дорого, скрупулезно.">
-				</li>
-				<li class="slide slide-2" id="item2">
-					<div class="slide-description">
-						<span class="slide-heading">
-							Любим математику,
-			 			    как никто другой
-						</span>
-						<p>
-							Никакого креатива, только математические формулы
-							для расчета идеальных пропорций
-						</p>
-						<a href="" class="button">Узнать больше</a>
-					</div>
-					<img src="img/slide2.png"  class="slider-img" width="698" height="413" alt="Любим математику, как никто другой!">
-				</li>
-				<li class="slide slide-3" id="item3">
-					<div class="slide-description">
-						<span class="slide-heading">
-							Только ночь,<br> только хардкор!
-						</span>
-						<p>
+							</p>
+							<a class="button" href="" >Узнать больше</a>
+						</div>
+						<img class="slider-img" src="img/slide1.png" width="698" height="413" alt="Долго, дорого, скрупулезно.">
+					</li>
+					<li class="slide slide-2" id="item2">
+						<div class="slide-description">
+							<span class="slide-heading">Любим математику, как никто другой</span>
+							<p>
+							Никакого креатива, только математические формулы для расчета идеальных пропорций
+							</p>
+							<a class="button" href="" >Узнать больше</a>
+						</div>
+						<img class="slider-img" src="img/slide2.png"  width="698" height="413" alt="Любим математику, как никто другой!">
+					</li>
+					<li class="slide slide-3" id="item3">
+						<div class="slide-description">
+							<span class="slide-heading">Только ночь,<br> только хардкор!</span>
+							<p>
 							Работать днем, как все? Мы против этого.<br>
 							Ближе к полуночи работа только начинается.
-						</p>
-						<a href="" class="button">Узнать больше</a>
-					</div>
-					<img src="img/slide3.png" class="slider-img" width="759" height="413" alt="Только ночь, только хардкор!">
-				</li>
+							</p>
+							<a class="button" href="" >Узнать больше</a>
+						</div>
+						<img class="slider-img" src="img/slide3.png"  width="759" height="413" alt="Только ночь, только хардкор!">
+					</li>
 				</ul>
-				</div>
+			</div>
 		</section>
     	<section class="container products"> 	
     		<h2 class="visually-hidden">Наши услуги</h2>
@@ -101,29 +92,26 @@
     			<li> 
     				<h3>Веб-сайты</h3>
     				<p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-    				<a href="" class="button-order button">Заказать</a>
+    				<a class="button-order button" href="">Заказать</a>
     			</li>
     			<li> 
     				<h3>Приложения</h3>
     				<p>Покорите топ-10 приложений в AppStore и GooglePlay</p>
-    				<a href="" class="button-order button button-order-green">Заказать</a>
+    				<a class="button-order button button-order-green" href="" >Заказать</a>
     			</li>
     			<li> 
     				<h3>Презентации</h3>
     				<p>Вы даже не подозреваете, насколько вы изумительны!</p>
-    				<a href="" class="button-order button button-order-yellow">Заказать</a>
+    				<a class="button-order button button-order-yellow" href="">Заказать</a>
     			</li>
     		</ul>
     	</section>
     	<section class="about-us container">
 			<h2 class="visually-hidden">О нас:</h2>
 			<div class="about-us-column">
-    			<span class="about-us-heading">
-					Мы — маленькая, но гордая
-					дизайн-студия из Краснодара. 
-				</span>
+    			<span class="about-us-heading">Мы — маленькая, но гордая дизайн-студия из Краснодара.</span>
     			<p class="about-us-description"> 
-    			Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.
+    				Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.
     			</p>
     			<p class="list-name">
 					Выполняем заказы на разработку:
@@ -144,7 +132,7 @@
 					</tr>
 					<tr>
 						<td> Уровень самоотдачи</td>
-						<td>Соблюдение сроков</td>
+						<td> Соблюдение сроков</td>
 						<td> Минимальная предоплата</td>
     				</tr>
     			</table>
@@ -177,50 +165,49 @@
     	</section>
     	<section class="contact-us"> 
 			<h2 class="visually-hidden">Контакты:</h2>
-			<img src="img/map.png" width="1440" height="416" alt="Адрес студии: Большая Конюшенная, дом 19/8, Санкт-Петербург">
-    			<div class="contacts">
-    				<p>NЁRDS DESIGN STUDIO</p>
+			<div class="map" style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/2/saint-petersburg/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Санкт‑Петербург</a><a href="https://yandex.ru/maps/2/saint-petersburg/?ll=30.322624%2C59.938737&source=wizgeo&utm_medium=mapframe&utm_source=maps&z=17.62" style="color:#eee;font-size:12px;position:absolute;top:14px;">Санкт‑Петербург — Яндекс.Карты</a><iframe src="https://yandex.ru/map-widget/v1/-/CKqiBF-y" width="100%" height="416" allowfullscreen="true" style="position:relative;"></iframe></div> 
+			<div class="contacts">
+			   	<p>NЁRDS DESIGN STUDIO</p>
     				<address>
     					191186, Санкт-Петербург,
     					ул. Б.Конюшенная, д. 19/8 <br>
-    					<a href="tel:+78122757575" class="phone-number"> +7 (812) 275-75-75</a>
+    					<a class="phone-number" href="tel:+78122757575"> +7 (812) 275-75-75</a>
 					</address>
-					<a href="" class="button button-write-us">Напишите нам</a>
+					<a class="button button-write-us" href="write-us.html">Напишите нам</a>
 				</div>
     	</section>
 	</main>
     <footer class="main-footer">  
 		<div class="container">
-      	<ul class="social-media"> 
-			<li>
-				<a href=""  class="vk-icon icon">
-					<span class="visually-hidden" >Вконтакте</span>
-				</a>
-			</li>
-      		<li>
-		   		<a href="" class="fb-icon icon"><span class="visually-hidden">Фейсбук</span>
-				</a>
-			</li>
-      		<li>
-				<a href="" class="inst-icon icon"><span class="visually-hidden">Инстаграм</span>
-				</a>
-			</li>
-      	</ul>
-      	<p>Давайте дружить, это выгодно!<br> 
-          <span>Скидка 10% для друзей из социальных сетей.</span>
-		  </p>
-		  </div>
+      		<ul class="social-media"> 
+				<li>
+					<a class="vk-icon icon" href="">
+						<span class="visually-hidden" >Вконтакте</span>
+					</a>
+				</li>
+      			<li>
+		   			<a class="fb-icon icon" href=""><span class="visually-hidden">Фейсбук</span>
+					</a>
+				</li>
+      			<li>
+					<a class="inst-icon icon" href="" ><span class="visually-hidden">Инстаграм</span>
+					</a>
+				</li>
+      		</ul>
+      		<p>Давайте дружить, это выгодно!<br> 
+          		<span>Скидка 10% для друзей из социальных сетей.</span>
+			</p>
+		</div>
 	</footer>
 	<section class="modal">
 			<h2>Напишите нам</h2>
-			<form method="post" action="" class="write-us-form">
+			<form class="write-us-form" method="post" action="#" >
 				<div class="user-data">
 					<p>
 						<label for="name=field">
 						Ваше имя:
 						</label>
-						<input type="text" name="name" id="name=field" placeholder="Имя Фамилия">
-				
+						<input type="text" name="name" id="name=field" placeholder="Имя Фамилия">		
 					</p>
 					<p>
 						<label for="email-field">Ваш e-mail:</label> 
@@ -235,9 +222,9 @@
 					<button type="submit" class="button button-send">Отправить </button> 
 				</p>
 			</form>
-		<button class="modal-close" type="button">
-			<span class="visually-hidden">Закрыть</span>
-		</button>
+			<button class="modal-close" type="button">
+				<span class="visually-hidden">Закрыть</span>
+			</button>
 	</section>
 	<script src="js/script.js"></script>
   </body>
