@@ -688,18 +688,26 @@
 
   .contact-us {
   position: relative;
-
+  
+  width:100%;
+  height:416px;
   margin-bottom: 69px;
+
+  background-image: url("../img/map.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
   }
 
  .map iframe {
   border:none;
+  z-index: 9;
  }
 
   .contacts {
   position: absolute;
   left: 7.7%;
   bottom: 54px; 
+  z-index: 14;
 
   width: 319px;
   min-height: 308px;
@@ -755,7 +763,7 @@
   position: absolute;
   top: 55px;
   left: 52%;
-  z-index: 10;
+  z-index: 15;
 
   display: block;
   width: 231px;
@@ -1433,6 +1441,7 @@
   position: fixed;
   top: 201px;
   left: 50%;
+  z-index: 20;
 
   display: none;
   width: 960px;
@@ -1614,16 +1623,7 @@
   padding-left: 14px;
 
   resize: none;
-  }
-
-  ::-webkit-input-placeholder,
-  ::-moz-placeholder,
-  :-moz-placeholder,
-  :-ms-input-placeholder {
-  color: rgba(68, 68, 68, 0.5);
-  }
-
-  
+  } 
   
   /*Кнопки */
 
