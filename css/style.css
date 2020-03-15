@@ -63,6 +63,7 @@
   min-width: 240px;
   min-height: 50px;
   padding-top: 16px;
+  vertical-align: top;
 
   font-size: 16px; 
   line-height: 18px; 
@@ -507,9 +508,9 @@
   width: 25px;
   height: 2px;
   margin-right: 10px;
+  vertical-align: middle;
 
   background-color: #fb565a;
-  vertical-align: middle;
   }
 
   .service li {
@@ -526,7 +527,7 @@
   min-height: 409px;
   margin: 0;
   margin-top: -34px;
-  margin-right: 60px;
+ 
 
   }
 
@@ -661,7 +662,7 @@
   opacity: 1;
   }
 
-  .partners-list img:active {
+  .partners-list a:active img {
   opacity: 0.1;
   }
 
@@ -733,7 +734,7 @@
   }
 
   .contacts address {
-  
+  width: 202px;
   margin-bottom: 37px;
 
   font-size: 16px;
@@ -809,6 +810,7 @@
   }
 
   .social-media a {
+  position: relative;
   display: block;
   width: 79px;
   height: 79px;
@@ -831,21 +833,52 @@
   background-color: #d7373b; 
   }
 
-  .icon {
-  background-position: center;
-  background-repeat: no-repeat;
-  }
+  .vk-icon::after {
+  content: "";
 
-  .vk-icon {
+  position: absolute;
+  top: calc(50% - 7.5px);
+  left: calc(50% - 14.5px);
+
+  display: block;
+  width: 27px;
+  height:15px;
+
   background-image: url("../img/vk-icon.svg");
   }
 
-  .fb-icon {
+  .fb-icon::after {
+  content: "";
+  
+  position: absolute;
+  top: calc(50% - 11px);
+  left: calc(50% - 6px);
+  
+  display: block;
+  width: 12px;
+  height:22px;
+  
   background-image: url("../img/fb-icon.svg");
   }
 
-  .inst-icon {
+  .inst-icon::after {
+  content: "";
+    
+  position: absolute;
+  top: calc(50% - 10.5px);
+  left: calc(50% - 10.5px);
+    
+  display: block;
+  width: 21px;
+  height:21px;
+    
   background-image: url("../img/insta-icon.svg");
+  }
+
+  .vk-icon:active::after,
+  .fb-icon:active::after,
+  .inst-icon:active::after {
+  opacity: 0.3;
   }
 
   .main-footer p {
@@ -1088,6 +1121,7 @@
   display: inline-block;
   width: 20px;
   height: 19px;
+  vertical-align: top;
 
   border: 2px solid rgba(77, 77, 77, 0.4);
   border-radius: 3px;
@@ -1152,12 +1186,8 @@
   border-color: rgba(0, 0, 0, 0.1);
   }
 
-  .filter-option input:disabled + label {
-  opacity: 0.3;
-  }
-
   .filter-option:hover input[type="checkbox"] + label::before { 
-  border-color: #4d4d4d
+   border-color: #4d4d4d 
   }
   
   .filter-option input[type="checkbox"]:hover + label::after { 
@@ -1171,6 +1201,20 @@
   .filter-option input[type="radio"]:hover + label::after {
   background-color: #4d4d4d;
   }
+
+  .filter-option input:disabled + label {
+  opacity: 0.3;
+  cursor: auto;
+  }
+
+  .filter-option input:disabled + label::before {
+  border-color: #4d4d4d;
+  opacity: 0.1;
+  }
+  
+  
+  
+
 
   .catalog {
   width: 760px ;
@@ -1219,34 +1263,24 @@
 
   opacity: 0.3;
   }
+  
+  .sort a:not(.current-sort):hover {
+  color:#000000;
+  opacity: 0.6;
+  }
+
+  .sort a:active {
+  opacity: 1;
+  }
 
   .sort a:focus {
-  outline: none;
+  opacity: 1;
   }
 
   .sort .current-sort {
   opacity: 1;
   }
   
-  .sort a:hover {
-  color:#000000;
-  opacity: 0.6;
-  }
-
-  .sort a:active {
-  color: #000000;
-
-  opacity: 1;
-  }
-
-  .sort a:focus{
-  color: #e74246;
-
-  outline: none;
-
-  }
-  
-
   .switcher {
   min-width: 43px;
   margin: 0;
@@ -1263,14 +1297,20 @@
 
   .switcher li:last-of-type {
   margin-left: 11px;
-
-  color: #a6a6a6;
-
-  opacity: 0.2;
   }
 
   .switcher a:not(.current-sort):hover {
+  opacity: 1;
+  }
+
+  .switcher a:not(.current-sort) {
   color: #a6a6a6;
+  opacity: 0.2;
+  }
+
+  .switcher .current-sort, 
+  .switcher a:active {
+  color: #000000;
   }
   
   .catalog-list {
@@ -1350,15 +1390,17 @@
   color: #fb565a
   }
 
+  .product-name:focus {
+  color: #fb565a;
+  
+  outline: none;
+  }
+
   .product-name:active {
   color: rgba(0, 0, 0, 0.3)
   }
 
-  .product-name:focus {
-  color: #fb565a;
-
-  outline: none;
-  }
+ 
 
   .catalog-item-details p {
   width: 208px;
@@ -1447,14 +1489,13 @@
   /*Блок напишите нам */
   .modal {
   position: fixed;
-  top: 201px;
-  left: 50%;
+  top: calc(50% - 290px);
+  left: calc(50% - 460px);
   z-index: 20;
 
   display: none;
   width: 960px;
   min-height: 590px;
-  margin-left: -460px;
   padding: 50px 80px;
 
   box-shadow: 0px 20px 40px 0 rgba(0, 1, 1, 0.75);
@@ -1531,7 +1572,7 @@
   opacity: 1;
   }
 
-  .modal-close:active  {
+  .modal-close:active {
   opacity: 0.1;
   }
 
