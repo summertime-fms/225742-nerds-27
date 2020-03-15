@@ -699,8 +699,12 @@
   }
 
  .map iframe {
-  border:none;
   z-index: 9;
+
+  width:100%;
+  height:416px;
+
+  border:none;
  }
 
   .contacts {
@@ -754,7 +758,11 @@
   }
 
   .phone-number:focus {
-  color: #FB565A;
+  color: #fb565a;
+  }
+
+  .phone-number:hover {
+  color: #fb565a;
   }
 
   .contact-us::before {
